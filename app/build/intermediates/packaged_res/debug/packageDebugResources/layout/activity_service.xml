@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        style="@style/Form"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <TextView
+            style="@style/Title"
+            android:text="@string/services_title" />
+
+        <EditText
+            android:id="@+id/edServiceName"
+            style="@style/Field"
+            android:hint="@string/hint_service_name"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/edServicePrice"
+            style="@style/Field"
+            android:hint="@string/hint_service_price"
+            android:inputType="numberDecimal" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnSaveService"
+                style="@style/Action"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="@string/action_save_service" />
+
+            <Button
+                android:id="@+id/btnClearService"
+                style="@style/Action"
+                android:layout_width="wrap_content"
+                android:text="@string/action_cancel_edit" />
+        </LinearLayout>
+
+        <TextView
+            style="@style/Label"
+            android:layout_marginTop="12dp"
+            android:text="@string/services_list_header" />
+
+        <ListView
+            android:id="@+id/listServices"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <include layout="@layout/layout_bottom_taskbar" />
+</LinearLayout>

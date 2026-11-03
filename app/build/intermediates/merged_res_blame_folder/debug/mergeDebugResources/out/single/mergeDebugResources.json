@@ -1,0 +1,70 @@
+[
+    {
+        "merged": "C:\\Users\\dtht0\\.gradle\\daemon\\9.8.2\\com.example.laundrymanager.app-debug-3:\\layout_activity_register.xml.flat",
+        "source": "C:\\Users\\dtht0\\.gradle\\daemon\\9.8.2\\com.example.laundrymanager.app-main-5:\\layout\\activity_register.xml"
+    },
+    {
+        "merged": "C:\\Users\\dtht0\\.gradle\\daemon\\9.8.2\\com.example.laundrymanager.app-debug-3:\\layout_activity_service.xml.flat",
+        "source": "C:\\Users\\dtht0\\.gradle\\daemon\\9.8.2\\com.example.laundrymanager.app-main-5:\\layout\\activity_service.xml"
+    },
+    {
+        "merged": "C:\\Users\\dtht0\\.gradle\\daemon\\9.8.2\\com.example.laundrymanager.app-debug-3:\\layout_activity_profile.xml.flat",
+        "source": "C:\\Users\\dtht0\\.gradle\\daemon\\9.8.2\\com.example.laundrymanager.app-main-5:\\layout\\activity_profile.xml"
+    },
+    {
+        "merged": "C:\\Users\\dtht0\\.gradle\\daemon\\9.8.2\\com.example.laundrymanager.app-debug-3:\\layout_activity_login.xml.flat",
+        "source": "C:\\Users\\dtht0\\.gradle\\daemon\\9.8.2\\com.example.laundrymanager.app-main-5:\\layout\\activity_login.xml"
+    },
+    {
+        "merged": "C:\\Users\\dtht0\\.gradle\\daemon\\9.8.2\\com.example.laundrymanager.app-debug-3:\\layout_activity_order_form.xml.flat",
+        "source": "C:\\Users\\dtht0\\.gradle\\daemon\\9.8.2\\com.example.laundrymanager.app-main-5:\\layout\\activity_order_form.xml"
+    },
+    {
+        "merged": "com.example.laundrymanager.app-debug-3:/layout_activity_customer.xml.flat",
+        "source": "com.example.laundrymanager.app-main-5:/layout/activity_customer.xml"
+    },
+    {
+        "merged": "com.example.laundrymanager.app-debug-3:/layout_activity_profile.xml.flat",
+        "source": "com.example.laundrymanager.app-main-5:/layout/activity_profile.xml"
+    },
+    {
+        "merged": "C:\\Users\\dtht0\\.gradle\\daemon\\9.8.2\\com.example.laundrymanager.app-debug-3:\\layout_activity_customer.xml.flat",
+        "source": "C:\\Users\\dtht0\\.gradle\\daemon\\9.8.2\\com.example.laundrymanager.app-main-5:\\layout\\activity_customer.xml"
+    },
+    {
+        "merged": "com.example.laundrymanager.app-debug-3:/layout_layout_bottom_taskbar.xml.flat",
+        "source": "com.example.laundrymanager.app-main-5:/layout/layout_bottom_taskbar.xml"
+    },
+    {
+        "merged": "com.example.laundrymanager.app-debug-3:/layout_activity_stats.xml.flat",
+        "source": "com.example.laundrymanager.app-main-5:/layout/activity_stats.xml"
+    },
+    {
+        "merged": "C:\\Users\\dtht0\\.gradle\\daemon\\9.8.2\\com.example.laundrymanager.app-debug-3:\\layout_activity_order_detail.xml.flat",
+        "source": "C:\\Users\\dtht0\\.gradle\\daemon\\9.8.2\\com.example.laundrymanager.app-main-5:\\layout\\activity_order_detail.xml"
+    },
+    {
+        "merged": "com.example.laundrymanager.app-debug-3:/layout_activity_order_form.xml.flat",
+        "source": "com.example.laundrymanager.app-main-5:/layout/activity_order_form.xml"
+    },
+    {
+        "merged": "com.example.laundrymanager.app-debug-3:/layout_activity_main.xml.flat",
+        "source": "com.example.laundrymanager.app-main-5:/layout/activity_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\dtht0\\.gradle\\daemon\\9.8.2\\com.example.laundrymanager.app-debug-3:\\layout_activity_main.xml.flat",
+        "source": "C:\\Users\\dtht0\\.gradle\\daemon\\9.8.2\\com.example.laundrymanager.app-main-5:\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "com.example.laundrymanager.app-debug-3:/layout_activity_service.xml.flat",
+        "source": "com.example.laundrymanager.app-main-5:/layout/activity_service.xml"
+    },
+    {
+        "merged": "C:\\Users\\dtht0\\.gradle\\daemon\\9.8.2\\com.example.laundrymanager.app-debug-3:\\layout_activity_stats.xml.flat",
+        "source": "C:\\Users\\dtht0\\.gradle\\daemon\\9.8.2\\com.example.laundrymanager.app-main-5:\\layout\\activity_stats.xml"
+    },
+    {
+        "merged": "C:\\Users\\dtht0\\.gradle\\daemon\\9.8.2\\com.example.laundrymanager.app-debug-3:\\layout_activity_order.xml.flat",
+        "source": "C:\\Users\\dtht0\\.gradle\\daemon\\9.8.2\\com.example.laundrymanager.app-main-5:\\layout\\activity_order.xml"
+    }
+]

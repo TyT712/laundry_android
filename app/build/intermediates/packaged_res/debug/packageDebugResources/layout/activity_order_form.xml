@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout style="@style/Form">
+
+        <TextView
+            android:id="@+id/tvOrderTitle"
+            style="@style/Title"
+            android:text="@string/order_new_title" />
+
+        <TextView
+            android:id="@+id/tvOrderInfo"
+            style="@style/Info"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+        <TextView
+            style="@style/Label"
+            android:text="@string/label_customer" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Spinner
+                android:id="@+id/spOrderCustomer"
+                style="@style/Choice"
+                android:layout_width="0dp"
+                android:layout_weight="1" />
+
+            <Button
+                android:id="@+id/btnQuickAddCustomer"
+                style="@style/Action"
+                android:layout_width="wrap_content"
+                android:text="@string/action_quick_add_customer" />
+        </LinearLayout>
+
+        <TextView
+            style="@style/Label"
+            android:text="@string/label_service" />
+
+        <Spinner
+            android:id="@+id/spOrderService"
+            style="@style/Choice" />
+
+        <TextView
+            style="@style/Label"
+            android:text="@string/label_weight" />
+
+        <EditText
+            android:id="@+id/edOrderWeight"
+            style="@style/Field"
+            android:hint="@string/hint_weight"
+            android:inputType="numberDecimal" />
+
+        <TextView
+            style="@style/Label"
+            android:text="@string/label_note" />
+
+        <EditText
+            android:id="@+id/edOrderNote"
+            style="@style/Field"
+            android:hint="@string/hint_note"
+            android:inputType="textMultiLine"
+            android:minLines="2" />
+
+        <LinearLayout
+            android:id="@+id/groupOrderStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/Label"
+                android:text="@string/label_status" />
+
+            <Spinner
+                android:id="@+id/spOrderStatus"
+                style="@style/Choice" />
+        </LinearLayout>
+
+        <TextView
+            style="@style/Label"
+            android:text="@string/label_payment" />
+
+        <Spinner
+            android:id="@+id/spOrderPayment"
+            style="@style/Choice" />
+
+        <TextView
+            android:id="@+id/tvOrderTotal"
+            style="@style/Label"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="8dp"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/btnSaveOrder"
+            style="@style/Action"
+            android:text="@string/action_create_order" />
+
+        <Button
+            android:id="@+id/btnDeleteOrder"
+            style="@style/Action"
+            android:text="@string/action_delete_order"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/btnCancelOrder"
+            style="@style/Action"
+            android:text="@string/action_back" />
+    </LinearLayout>
+</ScrollView>
+

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true">
+
+        <LinearLayout style="@style/Form">
+
+            <TextView
+                style="@style/Title"
+                android:text="@string/profile_title" />
+
+            <TextView
+                android:id="@+id/tvProfileUsername"
+                style="@style/Label" />
+
+            <TextView
+                android:id="@+id/tvProfileRole"
+                style="@style/Label" />
+
+            <TextView
+                style="@style/Label"
+                android:text="@string/label_fullname" />
+
+            <EditText
+                android:id="@+id/edProfileFullname"
+                style="@style/Field"
+                android:inputType="textPersonName" />
+
+            <TextView
+                style="@style/Label"
+                android:text="@string/label_phone" />
+
+            <EditText
+                android:id="@+id/edProfilePhone"
+                style="@style/Field"
+                android:inputType="phone" />
+
+            <TextView
+                style="@style/Label"
+                android:text="@string/label_new_password" />
+
+            <EditText
+                android:id="@+id/edProfilePassword"
+                style="@style/Field"
+                android:hint="@string/hint_password"
+                android:inputType="textPassword" />
+
+            <Button
+                android:id="@+id/btnSaveProfile"
+                style="@style/Action"
+                android:text="@string/action_save_profile" />
+
+            <Button
+                android:id="@+id/btnCloseProfile"
+                style="@style/Action"
+                android:text="@string/action_back" />
+        </LinearLayout>
+    </ScrollView>
+
+    <include layout="@layout/layout_bottom_taskbar" />
+</LinearLayout>

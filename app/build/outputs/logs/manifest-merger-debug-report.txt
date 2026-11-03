@@ -1,0 +1,77 @@
+-- Merging decision tree log ---
+manifest
+ADDED from C:\Users\dtht0\OneDrive\Desktop\LaundryManagerAndroid\app\src\main\AndroidManifest.xml:2:1-24:12
+INJECTED from C:\Users\dtht0\OneDrive\Desktop\LaundryManagerAndroid\app\src\main\AndroidManifest.xml:2:1-24:12
+INJECTED from C:\Users\dtht0\OneDrive\Desktop\LaundryManagerAndroid\app\src\main\AndroidManifest.xml:2:1-24:12
+INJECTED from C:\Users\dtht0\OneDrive\Desktop\LaundryManagerAndroid\app\src\main\AndroidManifest.xml:2:1-24:12
+	package
+		INJECTED from C:\Users\dtht0\OneDrive\Desktop\LaundryManagerAndroid\app\src\main\AndroidManifest.xml
+	android:versionName
+		INJECTED from C:\Users\dtht0\OneDrive\Desktop\LaundryManagerAndroid\app\src\main\AndroidManifest.xml
+	android:versionCode
+		INJECTED from C:\Users\dtht0\OneDrive\Desktop\LaundryManagerAndroid\app\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from C:\Users\dtht0\OneDrive\Desktop\LaundryManagerAndroid\app\src\main\AndroidManifest.xml:2:11-69
+application
+ADDED from C:\Users\dtht0\OneDrive\Desktop\LaundryManagerAndroid\app\src\main\AndroidManifest.xml:3:5-23:19
+INJECTED from C:\Users\dtht0\OneDrive\Desktop\LaundryManagerAndroid\app\src\main\AndroidManifest.xml:3:5-23:19
+	android:extractNativeLibs
+		INJECTED from C:\Users\dtht0\OneDrive\Desktop\LaundryManagerAndroid\app\src\main\AndroidManifest.xml
+	android:label
+		ADDED from C:\Users\dtht0\OneDrive\Desktop\LaundryManagerAndroid\app\src\main\AndroidManifest.xml:5:9-41
+	android:allowBackup
+		ADDED from C:\Users\dtht0\OneDrive\Desktop\LaundryManagerAndroid\app\src\main\AndroidManifest.xml:4:9-35
+	android:theme
+		ADDED from C:\Users\dtht0\OneDrive\Desktop\LaundryManagerAndroid\app\src\main\AndroidManifest.xml:6:9-40
+activity#com.example.laundrymanager.ui.LoginActivity
+ADDED from C:\Users\dtht0\OneDrive\Desktop\LaundryManagerAndroid\app\src\main\AndroidManifest.xml:8:9-15:20
+	android:exported
+		ADDED from C:\Users\dtht0\OneDrive\Desktop\LaundryManagerAndroid\app\src\main\AndroidManifest.xml:10:13-36
+	android:name
+		ADDED from C:\Users\dtht0\OneDrive\Desktop\LaundryManagerAndroid\app\src\main\AndroidManifest.xml:9:13-45
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from C:\Users\dtht0\OneDrive\Desktop\LaundryManagerAndroid\app\src\main\AndroidManifest.xml:11:13-14:29
+action#android.intent.action.MAIN
+ADDED from C:\Users\dtht0\OneDrive\Desktop\LaundryManagerAndroid\app\src\main\AndroidManifest.xml:12:17-69
+	android:name
+		ADDED from C:\Users\dtht0\OneDrive\Desktop\LaundryManagerAndroid\app\src\main\AndroidManifest.xml:12:25-66
+category#android.intent.category.LAUNCHER
+ADDED from C:\Users\dtht0\OneDrive\Desktop\LaundryManagerAndroid\app\src\main\AndroidManifest.xml:13:17-77
+	android:name
+		ADDED from C:\Users\dtht0\OneDrive\Desktop\LaundryManagerAndroid\app\src\main\AndroidManifest.xml:13:27-74
+activity#com.example.laundrymanager.ui.RegisterActivity
+ADDED from C:\Users\dtht0\OneDrive\Desktop\LaundryManagerAndroid\app\src\main\AndroidManifest.xml:16:9-57
+	android:name
+		ADDED from C:\Users\dtht0\OneDrive\Desktop\LaundryManagerAndroid\app\src\main\AndroidManifest.xml:16:19-54
+activity#com.example.laundrymanager.ui.MainActivity
+ADDED from C:\Users\dtht0\OneDrive\Desktop\LaundryManagerAndroid\app\src\main\AndroidManifest.xml:17:9-53
+	android:name
+		ADDED from C:\Users\dtht0\OneDrive\Desktop\LaundryManagerAndroid\app\src\main\AndroidManifest.xml:17:19-50
+activity#com.example.laundrymanager.ui.ProfileActivity
+ADDED from C:\Users\dtht0\OneDrive\Desktop\LaundryManagerAndroid\app\src\main\AndroidManifest.xml:18:9-56
+	android:name
+		ADDED from C:\Users\dtht0\OneDrive\Desktop\LaundryManagerAndroid\app\src\main\AndroidManifest.xml:18:19-53
+activity#com.example.laundrymanager.ui.CustomerActivity
+ADDED from C:\Users\dtht0\OneDrive\Desktop\LaundryManagerAndroid\app\src\main\AndroidManifest.xml:19:9-57
+	android:name
+		ADDED from C:\Users\dtht0\OneDrive\Desktop\LaundryManagerAndroid\app\src\main\AndroidManifest.xml:19:19-54
+activity#com.example.laundrymanager.ui.ServiceActivity
+ADDED from C:\Users\dtht0\OneDrive\Desktop\LaundryManagerAndroid\app\src\main\AndroidManifest.xml:20:9-56
+	android:name
+		ADDED from C:\Users\dtht0\OneDrive\Desktop\LaundryManagerAndroid\app\src\main\AndroidManifest.xml:20:19-53
+activity#com.example.laundrymanager.ui.OrderFormActivity
+ADDED from C:\Users\dtht0\OneDrive\Desktop\LaundryManagerAndroid\app\src\main\AndroidManifest.xml:21:9-58
+	android:name
+		ADDED from C:\Users\dtht0\OneDrive\Desktop\LaundryManagerAndroid\app\src\main\AndroidManifest.xml:21:19-55
+activity#com.example.laundrymanager.ui.StatsActivity
+ADDED from C:\Users\dtht0\OneDrive\Desktop\LaundryManagerAndroid\app\src\main\AndroidManifest.xml:22:9-54
+	android:name
+		ADDED from C:\Users\dtht0\OneDrive\Desktop\LaundryManagerAndroid\app\src\main\AndroidManifest.xml:22:19-51
+uses-sdk
+INJECTED from C:\Users\dtht0\OneDrive\Desktop\LaundryManagerAndroid\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from C:\Users\dtht0\OneDrive\Desktop\LaundryManagerAndroid\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\dtht0\OneDrive\Desktop\LaundryManagerAndroid\app\src\main\AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from C:\Users\dtht0\OneDrive\Desktop\LaundryManagerAndroid\app\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from C:\Users\dtht0\OneDrive\Desktop\LaundryManagerAndroid\app\src\main\AndroidManifest.xml

@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Laundry Manager</string>
+
+    <!-- Taskbar chuyển đổi chức năng -->
+    <string name="nav_orders">Đơn giặt</string>
+    <string name="nav_customers">Khách hàng</string>
+    <string name="nav_services">Dịch vụ</string>
+    <string name="nav_stats">Thống kê</string>
+    <string name="nav_profile">Tài khoản</string>
+
+    <!-- Chung -->
+    <string name="action_edit">Chỉnh sửa</string>
+    <string name="action_delete">Xóa</string>
+    <string name="action_cancel">Hủy</string>
+    <string name="action_back">Quay lại</string>
+    <string name="action_search">Tìm kiếm</string>
+    <string name="action_find">Tìm</string>
+    <string name="action_all">Tất cả</string>
+    <string name="action_refresh">Làm mới</string>
+    <string name="dialog_confirm_delete">Xác nhận xóa</string>
+    <string name="save_failed">Lưu thất bại</string>
+    <string name="password_too_short">Mật khẩu tối thiểu %1$d ký tự</string>
+    <string name="money_vnd">%1$s VNĐ</string>
+    <string name="label_fullname">Họ và tên</string>
+    <string name="label_phone">Số điện thoại</string>
+    <string name="hint_username">Tên đăng nhập</string>
+    <string name="hint_password">Mật khẩu</string>
+
+    <!-- Vai trò, trạng thái -->
+    <string name="role_manager">Quản lý</string>
+    <string name="role_staff">Nhân viên</string>
+    <string name="status_received">Tiếp nhận</string>
+    <string name="status_washing">Đang giặt</string>
+    <string name="status_drying">Đang sấy</string>
+    <string name="status_done">Hoàn thành</string>
+    <string name="status_delivered">Đã giao</string>
+    <string name="payment_unpaid">Chưa thanh toán</string>
+    <string name="payment_paid">Đã thanh toán</string>
+
+    <!-- Đăng nhập / đăng ký -->
+    <string name="login_title">QUẢN LÝ TIỆM GIẶT LÀ</string>
+    <string name="action_login">Đăng nhập</string>
+    <string name="action_go_register">Đăng ký tài khoản mới</string>
+    <string name="login_demo_accounts">Tài khoản mặc định để test:\n• Quản lý: admin / 123456\n• Nhân viên: nhanvien / 123456</string>
+    <string name="login_missing_fields">Vui lòng nhập tài khoản và mật khẩu</string>
+    <string name="login_failed">Sai tài khoản hoặc mật khẩu</string>
+    <string name="login_success">Đăng nhập thành công (%1$s)</string>
+    <string name="register_title">ĐĂNG KÝ TÀI KHOẢN</string>
+    <string name="register_role_note">Tài khoản đăng ký mới có vai trò Nhân viên.</string>
+    <string name="action_register_submit">Hoàn tất đăng ký</string>
+    <string name="action_back_login">Quay lại đăng nhập</string>
+    <string name="register_missing_fields">Vui lòng nhập Họ tên, Tên đăng nhập và Mật khẩu</string>
+    <string name="register_success">Đăng ký thành công! Vui lòng đăng nhập.</string>
+    <string name="register_duplicate">Tên đăng nhập đã tồn tại</string>
+
+    <!-- Hồ sơ cá nhân -->
+    <string name="profile_title">THÔNG TIN CÁ NHÂN</string>
+    <string name="profile_username">Tài khoản: %1$s</string>
+    <string name="profile_role">Vai trò: %1$s</string>
+    <string name="label_new_password">Mật khẩu mới (để trống nếu không đổi)</string>
+    <string name="action_save_profile">Lưu thông tin cá nhân</string>
+    <string name="profile_fullname_required">Họ và tên không được để trống</string>
+    <string name="profile_saved">Đã cập nhật thông tin cá nhân</string>
+
+    <!-- Màn hình chính -->
+    <string name="main_title">LAUNDRY MANAGER</string>
+    <string name="main_greeting">Xin chào: %1$s (%2$s) — Vai trò: %3$s</string>
+    <string name="action_new_order">Tạo đơn giặt mới</string>
+    <string name="action_customers">Quản lý khách hàng</string>
+    <string name="action_services">Quản lý danh mục dịch vụ</string>
+    <string name="action_stats">Thống kê doanh thu</string>
+    <string name="action_profile">Quản lý thông tin cá nhân</string>
+    <string name="action_logout">Đăng xuất</string>
+    <string name="orders_header">DANH SÁCH ĐƠN GIẶT (chạm vào đơn để xem chi tiết / sửa / xóa)</string>
+    <string name="hint_search_orders">Tìm theo khách hàng / dịch vụ / trạng thái</string>
+    <string name="order_row">#%1$d | %2$s | %3$s (%4$s kg)\n%5$s | %6$s | %7$s</string>
+
+    <!-- Khách hàng -->
+    <string name="customers_title">QUẢN LÝ KHÁCH HÀNG</string>
+    <string name="hint_customer_name">Họ tên khách hàng</string>
+    <string name="hint_customer_phone">Số điện thoại</string>
+    <string name="hint_customer_address">Địa chỉ</string>
+    <string name="action_save_customer">Lưu khách hàng</string>
+    <string name="action_update_customer">Cập nhật khách hàng</string>
+    <string name="action_cancel_edit">Hủy chọn</string>
+    <string name="customers_list_header">TRA CỨU / DANH SÁCH KHÁCH HÀNG (chạm để sửa/xóa)</string>
+    <string name="hint_search_customers">Tìm theo tên, SĐT, địa chỉ</string>
+    <string name="customer_row">#%1$d | %2$s - %3$s (%4$s)</string>
+    <string name="customer_label">%1$s (%2$s)</string>
+    <string name="customer_required">Vui lòng nhập tên và số điện thoại</string>
+    <string name="customer_added">Đã thêm khách hàng</string>
+    <string name="customer_updated">Đã cập nhật khách hàng</string>
+    <string name="customer_deleted">Đã xóa khách hàng</string>
+    <string name="customer_in_use">Không thể xóa: khách hàng đã có đơn giặt</string>
+    <string name="customer_confirm_delete">Bạn có chắc muốn xóa khách hàng %1$s?</string>
+
+    <!-- Dịch vụ -->
+    <string name="services_title">QUẢN LÝ DANH MỤC DỊCH VỤ</string>
+    <string name="hint_service_name">Tên dịch vụ (VD: Giặt ủi cao cấp)</string>
+    <string name="hint_service_price">Đơn giá / kg (VNĐ)</string>
+    <string name="action_save_service">Lưu dịch vụ</string>
+    <string name="action_update_service">Cập nhật dịch vụ</string>
+    <string name="services_list_header">DANH SÁCH DỊCH VỤ (chạm vào để sửa/xóa)</string>
+    <string name="service_label">%1$s (%2$sđ/kg)</string>
+    <string name="service_required">Vui lòng nhập tên dịch vụ và đơn giá</string>
+    <string name="service_invalid_price">Đơn giá không hợp lệ</string>
+    <string name="service_duplicate">Tên dịch vụ đã tồn tại</string>
+    <string name="service_added">Đã thêm dịch vụ mới</string>
+    <string name="service_updated">Đã cập nhật dịch vụ</string>
+    <string name="service_deleted">Đã xóa dịch vụ</string>
+    <string name="service_in_use">Không thể xóa: dịch vụ đã được dùng trong đơn giặt</string>
+    <string name="service_confirm_delete">Bạn có chắc muốn xóa dịch vụ %1$s?</string>
+
+    <!-- Đơn giặt -->
+    <string name="order_new_title">TẠO ĐƠN GIẶT MỚI</string>
+    <string name="order_edit_title">CHI TIẾT &amp; CẬP NHẬT ĐƠN GIẶT</string>
+    <string name="order_info">Mã đơn: #%1$d  |  Ngày tạo: %2$s</string>
+    <string name="label_customer">Khách hàng</string>
+    <string name="action_quick_add_customer">+ Khách mới</string>
+    <string name="label_service">Dịch vụ giặt</string>
+    <string name="label_weight">Khối lượng (kg)</string>
+    <string name="hint_weight">Nhập số kg (VD: 3.5)</string>
+    <string name="label_note">Ghi chú đơn giặt</string>
+    <string name="hint_note">Ghi chú (VD: giặt riêng đồ trắng)</string>
+    <string name="label_status">Trạng thái xử lý</string>
+    <string name="label_payment">Tình trạng thanh toán</string>
+    <string name="order_total">Thành tiền: %1$s</string>
+    <string name="action_create_order">Tạo đơn và tính tiền</string>
+    <string name="action_save_order">Lưu sửa đơn giặt</string>
+    <string name="action_delete_order">Xóa đơn giặt</string>
+    <string name="order_no_customers">Vui lòng thêm ít nhất 1 khách hàng trước khi tạo đơn</string>
+    <string name="select_customer_prompt">-- Chọn khách hàng --</string>
+    <string name="order_customer_required">Vui lòng chọn khách hàng</string>
+    <string name="order_no_services">Chưa có danh mục dịch vụ</string>
+    <string name="order_weight_required">Vui lòng nhập khối lượng đồ giặt (kg)</string>
+    <string name="order_weight_invalid">Khối lượng không hợp lệ</string>
+    <string name="order_created">Đã tạo đơn giặt</string>
+    <string name="order_updated">Đã cập nhật đơn giặt</string>
+    <string name="order_deleted">Đã xóa đơn giặt</string>
+    <string name="order_confirm_delete">Bạn có chắc muốn xóa đơn #%1$d?</string>
+
+    <!-- Thống kê -->
+    <string name="stats_title">THỐNG KÊ DOANH THU</string>
+    <string name="stats_body">• Tổng số đơn giặt: %1$d đơn\n• Tổng doanh thu: %2$s\n   - Đã thanh toán: %3$s\n   - Chưa thanh toán: %4$s\n\n• Tổng số khách hàng: %5$d khách\n• Tổng số dịch vụ: %6$d dịch vụ</string>
+    <string name="action_back_main">Quay lại màn hình chính</string>
+</resources>
+

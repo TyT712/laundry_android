@@ -1,0 +1,66 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.laundrymanager"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+7-->INJECTED
+8        android:minSdkVersion="23"
+8-->INJECTED
+9        android:targetSdkVersion="37" />
+9-->INJECTED
+10
+11    <application
+11-->C:\Users\dtht0\OneDrive\Desktop\LaundryManagerAndroid\app\src\main\AndroidManifest.xml:3:5-23:19
+12        android:allowBackup="true"
+12-->C:\Users\dtht0\OneDrive\Desktop\LaundryManagerAndroid\app\src\main\AndroidManifest.xml:4:9-35
+13        android:debuggable="true"
+14        android:extractNativeLibs="false"
+14-->INJECTED
+15        android:label="@string/app_name"
+15-->C:\Users\dtht0\OneDrive\Desktop\LaundryManagerAndroid\app\src\main\AndroidManifest.xml:5:9-41
+16        android:testOnly="true"
+17        android:theme="@style/AppTheme" >
+17-->C:\Users\dtht0\OneDrive\Desktop\LaundryManagerAndroid\app\src\main\AndroidManifest.xml:6:9-40
+18        <activity
+18-->C:\Users\dtht0\OneDrive\Desktop\LaundryManagerAndroid\app\src\main\AndroidManifest.xml:8:9-15:20
+19            android:name="com.example.laundrymanager.ui.LoginActivity"
+19-->C:\Users\dtht0\OneDrive\Desktop\LaundryManagerAndroid\app\src\main\AndroidManifest.xml:9:13-45
+20            android:exported="true" >
+20-->C:\Users\dtht0\OneDrive\Desktop\LaundryManagerAndroid\app\src\main\AndroidManifest.xml:10:13-36
+21            <intent-filter>
+21-->C:\Users\dtht0\OneDrive\Desktop\LaundryManagerAndroid\app\src\main\AndroidManifest.xml:11:13-14:29
+22                <action android:name="android.intent.action.MAIN" />
+22-->C:\Users\dtht0\OneDrive\Desktop\LaundryManagerAndroid\app\src\main\AndroidManifest.xml:12:17-69
+22-->C:\Users\dtht0\OneDrive\Desktop\LaundryManagerAndroid\app\src\main\AndroidManifest.xml:12:25-66
+23
+24                <category android:name="android.intent.category.LAUNCHER" />
+24-->C:\Users\dtht0\OneDrive\Desktop\LaundryManagerAndroid\app\src\main\AndroidManifest.xml:13:17-77
+24-->C:\Users\dtht0\OneDrive\Desktop\LaundryManagerAndroid\app\src\main\AndroidManifest.xml:13:27-74
+25            </intent-filter>
+26        </activity>
+27        <activity android:name="com.example.laundrymanager.ui.RegisterActivity" />
+27-->C:\Users\dtht0\OneDrive\Desktop\LaundryManagerAndroid\app\src\main\AndroidManifest.xml:16:9-57
+27-->C:\Users\dtht0\OneDrive\Desktop\LaundryManagerAndroid\app\src\main\AndroidManifest.xml:16:19-54
+28        <activity android:name="com.example.laundrymanager.ui.MainActivity" />
+28-->C:\Users\dtht0\OneDrive\Desktop\LaundryManagerAndroid\app\src\main\AndroidManifest.xml:17:9-53
+28-->C:\Users\dtht0\OneDrive\Desktop\LaundryManagerAndroid\app\src\main\AndroidManifest.xml:17:19-50
+29        <activity android:name="com.example.laundrymanager.ui.ProfileActivity" />
+29-->C:\Users\dtht0\OneDrive\Desktop\LaundryManagerAndroid\app\src\main\AndroidManifest.xml:18:9-56
+29-->C:\Users\dtht0\OneDrive\Desktop\LaundryManagerAndroid\app\src\main\AndroidManifest.xml:18:19-53
+30        <activity android:name="com.example.laundrymanager.ui.CustomerActivity" />
+30-->C:\Users\dtht0\OneDrive\Desktop\LaundryManagerAndroid\app\src\main\AndroidManifest.xml:19:9-57
+30-->C:\Users\dtht0\OneDrive\Desktop\LaundryManagerAndroid\app\src\main\AndroidManifest.xml:19:19-54
+31        <activity android:name="com.example.laundrymanager.ui.ServiceActivity" />
+31-->C:\Users\dtht0\OneDrive\Desktop\LaundryManagerAndroid\app\src\main\AndroidManifest.xml:20:9-56
+31-->C:\Users\dtht0\OneDrive\Desktop\LaundryManagerAndroid\app\src\main\AndroidManifest.xml:20:19-53
+32        <activity android:name="com.example.laundrymanager.ui.OrderFormActivity" />
+32-->C:\Users\dtht0\OneDrive\Desktop\LaundryManagerAndroid\app\src\main\AndroidManifest.xml:21:9-58
+32-->C:\Users\dtht0\OneDrive\Desktop\LaundryManagerAndroid\app\src\main\AndroidManifest.xml:21:19-55
+33        <activity android:name="com.example.laundrymanager.ui.StatsActivity" />
+33-->C:\Users\dtht0\OneDrive\Desktop\LaundryManagerAndroid\app\src\main\AndroidManifest.xml:22:9-54
+33-->C:\Users\dtht0\OneDrive\Desktop\LaundryManagerAndroid\app\src\main\AndroidManifest.xml:22:19-51
+34    </application>
+35
+36</manifest>
