@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:background="#FFFFFF"
-    android:elevation="8dp"
+    android:elevation="12dp"
     android:orientation="horizontal"
     android:paddingTop="6dp"
     android:paddingBottom="6dp">
@@ -15,11 +15,13 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_weight="1"
+        android:drawableTop="@drawable/ic_nav_orders"
+        android:drawablePadding="2dp"
         android:ellipsize="end"
         android:maxLines="1"
         android:padding="2dp"
         android:text="@string/nav_orders"
-        android:textSize="12sp"
+        android:textSize="11sp"
         android:textStyle="bold" />
 
     <Button
@@ -28,11 +30,13 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_weight="1"
+        android:drawableTop="@drawable/ic_nav_customers"
+        android:drawablePadding="2dp"
         android:ellipsize="end"
         android:maxLines="1"
         android:padding="2dp"
         android:text="@string/nav_customers"
-        android:textSize="12sp" />
+        android:textSize="11sp" />
 
     <Button
         android:id="@+id/navServices"
@@ -40,11 +44,13 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_weight="1"
+        android:drawableTop="@drawable/ic_nav_services"
+        android:drawablePadding="2dp"
         android:ellipsize="end"
         android:maxLines="1"
         android:padding="2dp"
         android:text="@string/nav_services"
-        android:textSize="12sp" />
+        android:textSize="11sp" />
 
     <Button
         android:id="@+id/navStats"
@@ -52,11 +58,13 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_weight="1"
+        android:drawableTop="@drawable/ic_nav_stats"
+        android:drawablePadding="2dp"
         android:ellipsize="end"
         android:maxLines="1"
         android:padding="2dp"
         android:text="@string/nav_stats"
-        android:textSize="12sp" />
+        android:textSize="11sp" />
 
     <Button
         android:id="@+id/navProfile"
@@ -64,9 +72,11 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_weight="1"
+        android:drawableTop="@drawable/ic_nav_profile"
+        android:drawablePadding="2dp"
         android:ellipsize="end"
         android:maxLines="1"
         android:padding="2dp"
         android:text="@string/nav_profile"
-        android:textSize="12sp" />
+        android:textSize="11sp" />
 </LinearLayout>

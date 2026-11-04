@@ -1,6 +1,27 @@
 R_DEF: Internal format may change without notice
 local
+color app_bg
+color border_color
+color primary
+color primary_dark
+color primary_light
+color surface
 color surface_variant
+color text_primary
+color text_secondary
+drawable bg_button_primary
+drawable bg_button_secondary
+drawable bg_card
+drawable bg_input
+drawable ic_add
+drawable ic_logout
+drawable ic_nav_customers
+drawable ic_nav_orders
+drawable ic_nav_profile
+drawable ic_nav_services
+drawable ic_nav_stats
+drawable ic_refresh
+drawable ic_search
 id bottomTaskbar
 id btnBackLogin
 id btnBackStats

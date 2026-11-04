@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.Intent;
 import android.graphics.Typeface;
+import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -92,12 +93,18 @@ public abstract class BaseActivity extends Activity {
             return;
         }
 
-        if (isCurrent) {
-            btn.setTextColor(0xFF0066CC);
-            btn.setTypeface(null, Typeface.BOLD);
-        } else {
-            btn.setTextColor(0xFF555555);
-            btn.setTypeface(null, Typeface.NORMAL);
+        int color = isCurrent ? 0xFF0066CC : 0xFF64748B;
+        btn.setTextColor(color);
+        btn.setTypeface(null, isCurrent ? Typeface.BOLD : Typeface.NORMAL);
+
+        Drawable[] drawables = btn.getCompoundDrawables();
+        if (drawables[1] != null) {
+            drawables[1] = drawables[1].mutate();
+            drawables[1].setTint(color);
+            btn.setCompoundDrawablesWithIntrinsicBounds(drawables[0], drawables[1], drawables[2], drawables[3]);
+        }
+
+        if (!isCurrent) {
             btn.setOnClickListener(v -> {
                 Intent intent = new Intent(this, targetActivity);
                 intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_SINGLE_TOP);
