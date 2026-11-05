@@ -1,41 +1,104 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/app_bg"
     android:fillViewport="true">
 
-    <LinearLayout style="@style/Form">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="20dp">
 
-        <TextView
-            style="@style/Title"
-            android:layout_marginTop="32dp"
-            android:text="@string/login_title" />
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            app:cardBackgroundColor="@color/surface"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="2dp"
+            app:strokeColor="@color/border_color"
+            app:strokeWidth="1dp">
 
-        <EditText
-            android:id="@+id/edUsername"
-            style="@style/Field"
-            android:hint="@string/hint_username"
-            android:inputType="text" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="24dp">
 
-        <EditText
-            android:id="@+id/edPassword"
-            style="@style/Field"
-            android:hint="@string/hint_password"
-            android:inputType="textPassword" />
+                <TextView
+                    style="@style/Title"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="4dp"
+                    android:text="@string/login_title"
+                    android:textColor="@color/primary_dark"
+                    android:textSize="20sp" />
 
-        <Button
-            android:id="@+id/btnLogin"
-            style="@style/Action"
-            android:text="@string/action_login" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="24dp"
+                    android:text="Đăng nhập hệ thống quản lý"
+                    android:textColor="@color/text_secondary"
+                    android:textSize="13sp" />
 
-        <Button
-            android:id="@+id/btnGoRegister"
-            style="@style/Action"
-            android:text="@string/action_go_register" />
+                <TextView
+                    style="@style/Label"
+                    android:layout_marginTop="0dp"
+                    android:text="@string/hint_username" />
 
-        <TextView
-            style="@style/Info"
-            android:text="@string/login_demo_accounts" />
+                <EditText
+                    android:id="@+id/edUsername"
+                    style="@style/Field"
+                    android:hint="@string/hint_username"
+                    android:inputType="text" />
+
+                <TextView
+                    style="@style/Label"
+                    android:layout_marginTop="12dp"
+                    android:text="@string/hint_password" />
+
+                <EditText
+                    android:id="@+id/edPassword"
+                    style="@style/Field"
+                    android:hint="@string/hint_password"
+                    android:inputType="textPassword" />
+
+                <Button
+                    android:id="@+id/btnLogin"
+                    style="@style/Action"
+                    android:layout_marginTop="24dp"
+                    android:text="@string/action_login" />
+
+                <Button
+                    android:id="@+id/btnGoRegister"
+                    style="@style/ActionSecondary"
+                    android:layout_marginTop="12dp"
+                    android:text="@string/action_go_register" />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- Khung tài khoản demo -->
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="@color/surface_variant"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="0dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:lineSpacingExtra="4dp"
+                android:padding="16dp"
+                android:text="@string/login_demo_accounts"
+                android:textColor="@color/text_secondary"
+                android:textSize="13sp" />
+        </com.google.android.material.card.MaterialCardView>
     </LinearLayout>
 </ScrollView>
-

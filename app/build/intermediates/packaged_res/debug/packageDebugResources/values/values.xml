@@ -1,12 +1,34 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="app_bg">#F4F6F9</color>
+    <color name="app_bg">#F8FAFC</color>
     <color name="border_color">#E2E8F0</color>
-    <color name="primary">#0066CC</color>
-    <color name="primary_dark">#004C99</color>
-    <color name="primary_light">#E7F1FF</color>
+    <color name="danger">#EF4444</color>
+    <color name="danger_light">#FEE2E2</color>
+    <color name="payment_paid_bg">#DCFCE7</color>
+    <color name="payment_paid_text">#166534</color>
+    <color name="payment_unpaid_bg">#FEE2E2</color>
+    <color name="payment_unpaid_text">#DC2626</color>
+    <color name="primary">#0284C7</color>
+    <color name="primary_dark">#0369A1</color>
+    <color name="primary_light">#E0F2FE</color>
+    <color name="primary_variant">#0EA5E9</color>
+    <color name="secondary">#0D9488</color>
+    <color name="secondary_dark">#0F766E</color>
+    <color name="secondary_light">#CCFBF1</color>
+    <color name="status_delivered_bg">#F1F5F9</color>
+    <color name="status_delivered_text">#475569</color>
+    <color name="status_done_bg">#DCFCE7</color>
+    <color name="status_done_text">#15803D</color>
+    <color name="status_drying_bg">#FEF3C7</color>
+    <color name="status_drying_text">#D97706</color>
+    <color name="status_received_bg">#E0F2FE</color>
+    <color name="status_received_text">#0284C7</color>
+    <color name="status_washing_bg">#EDE9FE</color>
+    <color name="status_washing_text">#6D28D9</color>
+    <color name="success">#22C55E</color>
     <color name="surface">#FFFFFF</color>
     <color name="surface_variant">#F1F5F9</color>
+    <color name="text_muted">#94A3B8</color>
     <color name="text_primary">#0F172A</color>
     <color name="text_secondary">#64748B</color>
     <string name="action_all">Tất cả</string>
@@ -34,10 +56,13 @@
     <string name="action_save_profile">Lưu thông tin cá nhân</string>
     <string name="action_save_service">Lưu dịch vụ</string>
     <string name="action_search">Tìm kiếm</string>
+    <string name="action_send_sms">Nhắn tin SMS</string>
     <string name="action_services">Quản lý danh mục dịch vụ</string>
+    <string name="action_share_receipt">Chia sẻ biên nhận</string>
     <string name="action_stats">Thống kê doanh thu</string>
     <string name="action_update_customer">Cập nhật khách hàng</string>
     <string name="action_update_service">Cập nhật dịch vụ</string>
+    <string name="action_view_history">Xem lịch sử đơn giặt</string>
     <string name="app_name">Laundry Manager</string>
     <string name="customer_added">Đã thêm khách hàng</string>
     <string name="customer_confirm_delete">Bạn có chắc muốn xóa khách hàng %1$s?</string>
@@ -50,9 +75,27 @@
     <string name="customers_list_header">TRA CỨU / DANH SÁCH KHÁCH HÀNG (chạm để sửa/xóa)</string>
     <string name="customers_title">QUẢN LÝ KHÁCH HÀNG</string>
     <string name="dialog_confirm_delete">Xác nhận xóa</string>
+    <string name="dialog_history_summary">Tổng: %1$d đơn • Đã chi: %2$s</string>
+    <string name="dialog_history_title">Lịch sử đơn: %1$s</string>
+    <string name="due_date_prefix">Hẹn trả: %1$s</string>
+    <string name="empty_customers_desc">Bấm \'Lưu khách hàng\' phía trên để thêm khách hàng mới.</string>
+    <string name="empty_customers_title">Chưa có khách hàng nào</string>
+    <string name="empty_orders_desc">Bấm nút tròn \'+\' bên dưới để tạo đơn giặt mới cho khách hàng.</string>
+    <string name="empty_orders_title">Chưa có đơn giặt nào</string>
+    <string name="empty_search_desc">Thử tìm kiếm với từ khóa khác hoặc bỏ chọn bộ lọc.</string>
+    <string name="empty_search_title">Không tìm thấy kết quả</string>
+    <string name="empty_services_desc">Bấm \'Lưu dịch vụ\' phía trên để thêm loại dịch vụ giặt mới.</string>
+    <string name="empty_services_title">Chưa có dịch vụ nào</string>
+    <string name="filter_all">Tất cả</string>
+    <string name="filter_delivered">Đã giao</string>
+    <string name="filter_done">Hoàn thành</string>
+    <string name="filter_processing">Đang xử lý</string>
+    <string name="filter_received">Chờ giặt</string>
+    <string name="filter_unpaid">Chưa thanh toán</string>
     <string name="hint_customer_address">Địa chỉ</string>
     <string name="hint_customer_name">Họ tên khách hàng</string>
     <string name="hint_customer_phone">Số điện thoại</string>
+    <string name="hint_due_date">Chạm để chọn ngày giờ hẹn</string>
     <string name="hint_note">Ghi chú (VD: giặt riêng đồ trắng)</string>
     <string name="hint_password">Mật khẩu</string>
     <string name="hint_search_customers">Tìm theo tên, SĐT, địa chỉ</string>
@@ -62,6 +105,7 @@
     <string name="hint_username">Tên đăng nhập</string>
     <string name="hint_weight">Nhập số kg (VD: 3.5)</string>
     <string name="label_customer">Khách hàng</string>
+    <string name="label_due_date">Thời gian hẹn trả đồ</string>
     <string name="label_fullname">Họ và tên</string>
     <string name="label_new_password">Mật khẩu mới (để trống nếu không đổi)</string>
     <string name="label_note">Ghi chú đơn giặt</string>
@@ -83,6 +127,7 @@
     <string name="nav_profile">Tài khoản</string>
     <string name="nav_services">Dịch vụ</string>
     <string name="nav_stats">Thống kê</string>
+    <string name="no_orders_for_customer">Khách hàng chưa có đơn giặt nào.</string>
     <string name="order_confirm_delete">Bạn có chắc muốn xóa đơn #%1$d?</string>
     <string name="order_created">Đã tạo đơn giặt</string>
     <string name="order_customer_required">Vui lòng chọn khách hàng</string>
@@ -126,26 +171,46 @@
     <string name="service_updated">Đã cập nhật dịch vụ</string>
     <string name="services_list_header">DANH SÁCH DỊCH VỤ (chạm vào để sửa/xóa)</string>
     <string name="services_title">QUẢN LÝ DANH MỤC DỊCH VỤ</string>
+    <string name="share_receipt_title">Chia sẻ biên nhận giặt là</string>
     <string name="stats_body">• Tổng số đơn giặt: %1$d đơn\n• Tổng doanh thu: %2$s\n   - Đã thanh toán: %3$s\n   - Chưa thanh toán: %4$s\n\n• Tổng số khách hàng: %5$d khách\n• Tổng số dịch vụ: %6$d dịch vụ</string>
+    <string name="stats_no_service_data">Không có phát sinh doanh thu trong khoảng thời gian này.</string>
+    <string name="stats_service_breakdown_title">CƠ CẤU DOANH THU THEO DỊCH VỤ</string>
     <string name="stats_title">THỐNG KÊ DOANH THU</string>
     <string name="status_delivered">Đã giao</string>
     <string name="status_done">Hoàn thành</string>
     <string name="status_drying">Đang sấy</string>
+    <string name="status_overdue">Quá hạn hẹn</string>
     <string name="status_received">Tiếp nhận</string>
     <string name="status_washing">Đang giặt</string>
-    <style name="Action" parent="@android:style/Widget.Material.Light.Button">
+    <string name="time_filter_7days">7 ngày qua</string>
+    <string name="time_filter_all">Toàn thời gian</string>
+    <string name="time_filter_custom">Tùy chọn ngày</string>
+    <string name="time_filter_month">Tháng này</string>
+    <string name="time_filter_today">Hôm nay</string>
+    <style name="Action" parent="Widget.MaterialComponents.Button">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">48dp</item>
-        <item name="android:background">@drawable/bg_button_primary</item>
+        <item name="android:backgroundTint">@color/primary</item>
         <item name="android:textColor">#FFFFFF</item>
         <item name="android:textSize">14sp</item>
         <item name="android:textStyle">bold</item>
-        <item name="android:stateListAnimator">@null</item>
+        <item name="cornerRadius">10dp</item>
     </style>
-    <style name="AppTheme" parent="@android:style/Theme.Material.Light.NoActionBar">
+    <style name="ActionSecondary" parent="Widget.MaterialComponents.Button.OutlinedButton">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">48dp</item>
+        <item name="android:textColor">@color/primary</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="strokeColor">@color/primary</item>
+        <item name="cornerRadius">10dp</item>
+    </style>
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
         <item name="android:windowBackground">@color/app_bg</item>
-        <item name="android:colorPrimary">@color/primary</item>
-        <item name="android:colorPrimaryDark">@color/primary_dark</item>
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryDark">@color/primary_dark</item>
+        <item name="colorSecondary">@color/secondary</item>
+        <item name="android:textColorPrimary">@color/text_primary</item>
     </style>
     <style name="Choice" parent="@android:style/Widget.Material.Light.Spinner">
         <item name="android:layout_width">match_parent</item>
@@ -153,7 +218,7 @@
         <item name="android:background">@drawable/bg_input</item>
         <item name="android:padding">10dp</item>
     </style>
-    <style name="Field" parent="@android:style/Widget.Material.Light.EditText">
+    <style name="Field" parent="Widget.AppCompat.EditText">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:background">@drawable/bg_input</item>
@@ -168,7 +233,7 @@
         <item name="android:orientation">vertical</item>
         <item name="android:padding">16dp</item>
     </style>
-    <style name="Info" parent="@android:style/Widget.Material.Light.TextView">
+    <style name="Info" parent="Widget.MaterialComponents.TextView">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_marginTop">8dp</item>
@@ -177,7 +242,7 @@
         <item name="android:background">@drawable/bg_card</item>
         <item name="android:textColor">@color/text_primary</item>
     </style>
-    <style name="Label" parent="@android:style/Widget.Material.Light.TextView">
+    <style name="Label" parent="Widget.MaterialComponents.TextView">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_marginTop">10dp</item>
@@ -186,7 +251,7 @@
         <item name="android:textSize">14sp</item>
         <item name="android:textStyle">bold</item>
     </style>
-    <style name="Title" parent="@android:style/Widget.Material.Light.TextView">
+    <style name="Title" parent="Widget.MaterialComponents.TextView">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_marginBottom">12dp</item>

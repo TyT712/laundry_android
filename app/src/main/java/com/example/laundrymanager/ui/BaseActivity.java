@@ -1,7 +1,5 @@
 package com.example.laundrymanager.ui;
 
-import android.app.Activity;
-import android.app.AlertDialog;
 import android.content.Intent;
 import android.graphics.Typeface;
 import android.graphics.drawable.Drawable;
@@ -10,14 +8,17 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
+import androidx.appcompat.app.AppCompatActivity;
+
 import com.example.laundrymanager.R;
 import com.example.laundrymanager.util.Session;
+import com.google.android.material.dialog.MaterialAlertDialogBuilder;
 
 /**
  * Khung chung cho mọi màn hình: kiểm tra quyền truy cập, nạp layout rồi gọi {@link #onReady()}.
  * Màn hình không đủ quyền sẽ tự đóng (hoặc chuyển về đăng nhập nếu chưa đăng nhập).
  */
-public abstract class BaseActivity extends Activity {
+public abstract class BaseActivity extends AppCompatActivity {
     public enum NavTab {
         ORDERS, CUSTOMERS, SERVICES, STATS, PROFILE
     }
@@ -93,7 +94,7 @@ public abstract class BaseActivity extends Activity {
             return;
         }
 
-        int color = isCurrent ? 0xFF0066CC : 0xFF64748B;
+        int color = isCurrent ? getResources().getColor(R.color.primary) : getResources().getColor(R.color.text_secondary);
         btn.setTextColor(color);
         btn.setTypeface(null, isCurrent ? Typeface.BOLD : Typeface.NORMAL);
 
@@ -121,7 +122,7 @@ public abstract class BaseActivity extends Activity {
     }
 
     protected void confirmDelete(String message, Runnable onConfirm) {
-        new AlertDialog.Builder(this)
+        new MaterialAlertDialogBuilder(this)
                 .setTitle(R.string.dialog_confirm_delete)
                 .setMessage(message)
                 .setPositiveButton(R.string.action_delete, (dialog, which) -> onConfirm.run())
@@ -131,7 +132,7 @@ public abstract class BaseActivity extends Activity {
 
     protected void showEditDeleteMenu(String title, Runnable onEdit, Runnable onDelete) {
         String[] actions = {getString(R.string.action_edit), getString(R.string.action_delete)};
-        new AlertDialog.Builder(this)
+        new MaterialAlertDialogBuilder(this)
                 .setTitle(title)
                 .setItems(actions, (dialog, which) -> (which == 0 ? onEdit : onDelete).run())
                 .show();

@@ -144,5 +144,44 @@
     <string name="stats_title">THỐNG KÊ DOANH THU</string>
     <string name="stats_body">• Tổng số đơn giặt: %1$d đơn\n• Tổng doanh thu: %2$s\n   - Đã thanh toán: %3$s\n   - Chưa thanh toán: %4$s\n\n• Tổng số khách hàng: %5$d khách\n• Tổng số dịch vụ: %6$d dịch vụ</string>
     <string name="action_back_main">Quay lại màn hình chính</string>
+
+    <!-- Bộ lọc & Trạng thái trống (Phase 1) -->
+    <string name="filter_all">Tất cả</string>
+    <string name="filter_received">Chờ giặt</string>
+    <string name="filter_processing">Đang xử lý</string>
+    <string name="filter_done">Hoàn thành</string>
+    <string name="filter_delivered">Đã giao</string>
+    <string name="filter_unpaid">Chưa thanh toán</string>
+
+    <string name="empty_orders_title">Chưa có đơn giặt nào</string>
+    <string name="empty_orders_desc">Bấm nút tròn \'+\' bên dưới để tạo đơn giặt mới cho khách hàng.</string>
+    <string name="empty_search_title">Không tìm thấy kết quả</string>
+    <string name="empty_search_desc">Thử tìm kiếm với từ khóa khác hoặc bỏ chọn bộ lọc.</string>
+    <string name="empty_customers_title">Chưa có khách hàng nào</string>
+    <string name="empty_customers_desc">Bấm \'Lưu khách hàng\' phía trên để thêm khách hàng mới.</string>
+    <string name="empty_services_title">Chưa có dịch vụ nào</string>
+    <string name="empty_services_desc">Bấm \'Lưu dịch vụ\' phía trên để thêm loại dịch vụ giặt mới.</string>
+
+    <!-- Phase 2: Nghiệp vụ Hẹn trả, Biên nhận, Lịch sử -->
+    <string name="label_due_date">Thời gian hẹn trả đồ</string>
+    <string name="hint_due_date">Chạm để chọn ngày giờ hẹn</string>
+    <string name="status_overdue">Quá hạn hẹn</string>
+    <string name="due_date_prefix">Hẹn trả: %1$s</string>
+    <string name="action_share_receipt">Chia sẻ biên nhận</string>
+    <string name="action_view_history">Xem lịch sử đơn giặt</string>
+    <string name="share_receipt_title">Chia sẻ biên nhận giặt là</string>
+    <string name="dialog_history_title">Lịch sử đơn: %1$s</string>
+    <string name="dialog_history_summary">Tổng: %1$d đơn • Đã chi: %2$s</string>
+    <string name="no_orders_for_customer">Khách hàng chưa có đơn giặt nào.</string>
+    <string name="action_send_sms">Nhắn tin SMS</string>
+
+    <!-- Phase 3: Thống kê & Báo cáo nâng cao -->
+    <string name="time_filter_all">Toàn thời gian</string>
+    <string name="time_filter_today">Hôm nay</string>
+    <string name="time_filter_7days">7 ngày qua</string>
+    <string name="time_filter_month">Tháng này</string>
+    <string name="time_filter_custom">Tùy chọn ngày</string>
+    <string name="stats_service_breakdown_title">CƠ CẤU DOANH THU THEO DỊCH VỤ</string>
+    <string name="stats_no_service_data">Không có phát sinh doanh thu trong khoảng thời gian này.</string>
 </resources>
 

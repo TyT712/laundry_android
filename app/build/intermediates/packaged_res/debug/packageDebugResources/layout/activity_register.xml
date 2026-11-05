@@ -1,52 +1,108 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/app_bg"
     android:fillViewport="true">
 
-    <LinearLayout style="@style/Form">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="20dp">
 
-        <TextView
-            style="@style/Title"
-            android:text="@string/register_title" />
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            app:cardBackgroundColor="@color/surface"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="2dp"
+            app:strokeColor="@color/border_color"
+            app:strokeWidth="1dp">
 
-        <EditText
-            android:id="@+id/edRegFullname"
-            style="@style/Field"
-            android:hint="@string/label_fullname"
-            android:inputType="textPersonName" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="24dp">
 
-        <EditText
-            android:id="@+id/edRegPhone"
-            style="@style/Field"
-            android:hint="@string/label_phone"
-            android:inputType="phone" />
+                <TextView
+                    style="@style/Title"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="4dp"
+                    android:text="@string/register_title"
+                    android:textColor="@color/primary_dark"
+                    android:textSize="20sp" />
 
-        <EditText
-            android:id="@+id/edRegUsername"
-            style="@style/Field"
-            android:hint="@string/hint_username"
-            android:inputType="text" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="20dp"
+                    android:text="@string/register_role_note"
+                    android:textColor="@color/text_secondary"
+                    android:textSize="12sp" />
 
-        <EditText
-            android:id="@+id/edRegPassword"
-            style="@style/Field"
-            android:hint="@string/hint_password"
-            android:inputType="textPassword" />
+                <TextView
+                    style="@style/Label"
+                    android:layout_marginTop="0dp"
+                    android:text="@string/label_fullname" />
 
-        <TextView
-            style="@style/Info"
-            android:text="@string/register_role_note" />
+                <EditText
+                    android:id="@+id/edRegFullname"
+                    style="@style/Field"
+                    android:hint="@string/label_fullname"
+                    android:inputType="textPersonName" />
 
-        <Button
-            android:id="@+id/btnRegisterSubmit"
-            style="@style/Action"
-            android:text="@string/action_register_submit" />
+                <TextView
+                    style="@style/Label"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/label_phone" />
 
-        <Button
-            android:id="@+id/btnBackLogin"
-            style="@style/Action"
-            android:text="@string/action_back_login" />
+                <EditText
+                    android:id="@+id/edRegPhone"
+                    style="@style/Field"
+                    android:hint="@string/label_phone"
+                    android:inputType="phone" />
+
+                <TextView
+                    style="@style/Label"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/hint_username" />
+
+                <EditText
+                    android:id="@+id/edRegUsername"
+                    style="@style/Field"
+                    android:hint="@string/hint_username"
+                    android:inputType="text" />
+
+                <TextView
+                    style="@style/Label"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/hint_password" />
+
+                <EditText
+                    android:id="@+id/edRegPassword"
+                    style="@style/Field"
+                    android:hint="@string/hint_password"
+                    android:inputType="textPassword" />
+
+                <Button
+                    android:id="@+id/btnRegisterSubmit"
+                    style="@style/Action"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/action_register_submit" />
+
+                <Button
+                    android:id="@+id/btnBackLogin"
+                    style="@style/ActionSecondary"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/action_back_login" />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
     </LinearLayout>
 </ScrollView>
-

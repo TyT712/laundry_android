@@ -1,102 +1,154 @@
 [
     {
-        "merged": "C:\\Users\\dtht0\\.gradle\\daemon\\9.8.2\\com.example.laundrymanager.app-debug-3:\\layout_activity_register.xml.flat",
-        "source": "C:\\Users\\dtht0\\.gradle\\daemon\\9.8.2\\com.example.laundrymanager.app-main-5:\\layout\\activity_register.xml"
+        "merged": "C:\\Users\\dtht0\\.gradle\\daemon\\9.8.2\\com.example.laundrymanager.app-debug-31:\\drawable_bg_badge_rounded.xml.flat",
+        "source": "C:\\Users\\dtht0\\.gradle\\daemon\\9.8.2\\com.example.laundrymanager.app-main-33:\\drawable\\bg_badge_rounded.xml"
     },
     {
-        "merged": "com.example.laundrymanager.app-debug-3:/drawable_ic_nav_orders.xml.flat",
-        "source": "com.example.laundrymanager.app-main-5:/drawable/ic_nav_orders.xml"
+        "merged": "C:\\Users\\dtht0\\.gradle\\daemon\\9.8.2\\com.example.laundrymanager.app-debug-31:\\layout_activity_service.xml.flat",
+        "source": "C:\\Users\\dtht0\\.gradle\\daemon\\9.8.2\\com.example.laundrymanager.app-main-33:\\layout\\activity_service.xml"
     },
     {
-        "merged": "C:\\Users\\dtht0\\.gradle\\daemon\\9.8.2\\com.example.laundrymanager.app-debug-3:\\layout_activity_service.xml.flat",
-        "source": "C:\\Users\\dtht0\\.gradle\\daemon\\9.8.2\\com.example.laundrymanager.app-main-5:\\layout\\activity_service.xml"
+        "merged": "C:\\Users\\dtht0\\.gradle\\daemon\\9.8.2\\com.example.laundrymanager.app-debug-31:\\layout_item_stat_service.xml.flat",
+        "source": "C:\\Users\\dtht0\\.gradle\\daemon\\9.8.2\\com.example.laundrymanager.app-main-33:\\layout\\item_stat_service.xml"
     },
     {
-        "merged": "C:\\Users\\dtht0\\.gradle\\daemon\\9.8.2\\com.example.laundrymanager.app-debug-3:\\layout_activity_profile.xml.flat",
-        "source": "C:\\Users\\dtht0\\.gradle\\daemon\\9.8.2\\com.example.laundrymanager.app-main-5:\\layout\\activity_profile.xml"
+        "merged": "C:\\Users\\dtht0\\.gradle\\daemon\\9.8.2\\com.example.laundrymanager.app-debug-31:\\layout_activity_profile.xml.flat",
+        "source": "C:\\Users\\dtht0\\.gradle\\daemon\\9.8.2\\com.example.laundrymanager.app-main-33:\\layout\\activity_profile.xml"
     },
     {
-        "merged": "com.example.laundrymanager.app-debug-3:/drawable_ic_add.xml.flat",
-        "source": "com.example.laundrymanager.app-main-5:/drawable/ic_add.xml"
+        "merged": "C:\\Users\\dtht0\\.gradle\\daemon\\9.8.2\\com.example.laundrymanager.app-debug-31:\\layout_activity_customer.xml.flat",
+        "source": "C:\\Users\\dtht0\\.gradle\\daemon\\9.8.2\\com.example.laundrymanager.app-main-33:\\layout\\activity_customer.xml"
     },
     {
-        "merged": "C:\\Users\\dtht0\\.gradle\\daemon\\9.8.2\\com.example.laundrymanager.app-debug-3:\\layout_activity_login.xml.flat",
-        "source": "C:\\Users\\dtht0\\.gradle\\daemon\\9.8.2\\com.example.laundrymanager.app-main-5:\\layout\\activity_login.xml"
+        "merged": "C:\\Users\\dtht0\\.gradle\\daemon\\9.8.2\\com.example.laundrymanager.app-debug-31:\\drawable_bg_button_primary.xml.flat",
+        "source": "C:\\Users\\dtht0\\.gradle\\daemon\\9.8.2\\com.example.laundrymanager.app-main-33:\\drawable\\bg_button_primary.xml"
     },
     {
-        "merged": "com.example.laundrymanager.app-debug-3:/drawable_ic_refresh.xml.flat",
-        "source": "com.example.laundrymanager.app-main-5:/drawable/ic_refresh.xml"
+        "merged": "C:\\Users\\dtht0\\.gradle\\daemon\\9.8.2\\com.example.laundrymanager.app-debug-31:\\drawable_ic_search.xml.flat",
+        "source": "C:\\Users\\dtht0\\.gradle\\daemon\\9.8.2\\com.example.laundrymanager.app-main-33:\\drawable\\ic_search.xml"
     },
     {
-        "merged": "com.example.laundrymanager.app-debug-3:/drawable_ic_search.xml.flat",
-        "source": "com.example.laundrymanager.app-main-5:/drawable/ic_search.xml"
+        "merged": "C:\\Users\\dtht0\\.gradle\\daemon\\9.8.2\\com.example.laundrymanager.app-debug-31:\\drawable_ic_message.xml.flat",
+        "source": "C:\\Users\\dtht0\\.gradle\\daemon\\9.8.2\\com.example.laundrymanager.app-main-33:\\drawable\\ic_message.xml"
     },
     {
-        "merged": "com.example.laundrymanager.app-debug-3:/drawable_ic_nav_services.xml.flat",
-        "source": "com.example.laundrymanager.app-main-5:/drawable/ic_nav_services.xml"
+        "merged": "C:\\Users\\dtht0\\.gradle\\daemon\\9.8.2\\com.example.laundrymanager.app-debug-31:\\drawable_ic_nav_services.xml.flat",
+        "source": "C:\\Users\\dtht0\\.gradle\\daemon\\9.8.2\\com.example.laundrymanager.app-main-33:\\drawable\\ic_nav_services.xml"
     },
     {
-        "merged": "C:\\Users\\dtht0\\.gradle\\daemon\\9.8.2\\com.example.laundrymanager.app-debug-3:\\layout_activity_order_form.xml.flat",
-        "source": "C:\\Users\\dtht0\\.gradle\\daemon\\9.8.2\\com.example.laundrymanager.app-main-5:\\layout\\activity_order_form.xml"
+        "merged": "C:\\Users\\dtht0\\.gradle\\daemon\\9.8.2\\com.example.laundrymanager.app-debug-31:\\layout_layout_empty_state.xml.flat",
+        "source": "C:\\Users\\dtht0\\.gradle\\daemon\\9.8.2\\com.example.laundrymanager.app-main-33:\\layout\\layout_empty_state.xml"
     },
     {
-        "merged": "C:\\Users\\dtht0\\.gradle\\daemon\\9.8.2\\com.example.laundrymanager.app-debug-3:\\layout_activity_customer.xml.flat",
-        "source": "C:\\Users\\dtht0\\.gradle\\daemon\\9.8.2\\com.example.laundrymanager.app-main-5:\\layout\\activity_customer.xml"
+        "merged": "C:\\Users\\dtht0\\.gradle\\daemon\\9.8.2\\com.example.laundrymanager.app-debug-31:\\drawable_bg_avatar_circle.xml.flat",
+        "source": "C:\\Users\\dtht0\\.gradle\\daemon\\9.8.2\\com.example.laundrymanager.app-main-33:\\drawable\\bg_avatar_circle.xml"
     },
     {
-        "merged": "com.example.laundrymanager.app-debug-3:/layout_layout_bottom_taskbar.xml.flat",
-        "source": "com.example.laundrymanager.app-main-5:/layout/layout_bottom_taskbar.xml"
+        "merged": "C:\\Users\\dtht0\\.gradle\\daemon\\9.8.2\\com.example.laundrymanager.app-debug-31:\\layout_item_order.xml.flat",
+        "source": "C:\\Users\\dtht0\\.gradle\\daemon\\9.8.2\\com.example.laundrymanager.app-main-33:\\layout\\item_order.xml"
     },
     {
-        "merged": "C:\\Users\\dtht0\\.gradle\\daemon\\9.8.2\\com.example.laundrymanager.app-debug-3:\\layout_layout_bottom_taskbar.xml.flat",
-        "source": "C:\\Users\\dtht0\\.gradle\\daemon\\9.8.2\\com.example.laundrymanager.app-main-5:\\layout\\layout_bottom_taskbar.xml"
+        "merged": "C:\\Users\\dtht0\\.gradle\\daemon\\9.8.2\\com.example.laundrymanager.app-debug-31:\\layout_item_service.xml.flat",
+        "source": "C:\\Users\\dtht0\\.gradle\\daemon\\9.8.2\\com.example.laundrymanager.app-main-33:\\layout\\item_service.xml"
     },
     {
-        "merged": "com.example.laundrymanager.app-debug-3:/drawable_ic_nav_stats.xml.flat",
-        "source": "com.example.laundrymanager.app-main-5:/drawable/ic_nav_stats.xml"
+        "merged": "C:\\Users\\dtht0\\.gradle\\daemon\\9.8.2\\com.example.laundrymanager.app-debug-31:\\drawable_ic_inbox_empty.xml.flat",
+        "source": "C:\\Users\\dtht0\\.gradle\\daemon\\9.8.2\\com.example.laundrymanager.app-main-33:\\drawable\\ic_inbox_empty.xml"
     },
     {
-        "merged": "com.example.laundrymanager.app-debug-3:/drawable_bg_button_primary.xml.flat",
-        "source": "com.example.laundrymanager.app-main-5:/drawable/bg_button_primary.xml"
+        "merged": "C:\\Users\\dtht0\\.gradle\\daemon\\9.8.2\\com.example.laundrymanager.app-debug-31:\\drawable_ic_refresh.xml.flat",
+        "source": "C:\\Users\\dtht0\\.gradle\\daemon\\9.8.2\\com.example.laundrymanager.app-main-33:\\drawable\\ic_refresh.xml"
     },
     {
-        "merged": "com.example.laundrymanager.app-debug-3:/drawable_bg_button_secondary.xml.flat",
-        "source": "com.example.laundrymanager.app-main-5:/drawable/bg_button_secondary.xml"
+        "merged": "C:\\Users\\dtht0\\.gradle\\daemon\\9.8.2\\com.example.laundrymanager.app-debug-31:\\layout_activity_main.xml.flat",
+        "source": "C:\\Users\\dtht0\\.gradle\\daemon\\9.8.2\\com.example.laundrymanager.app-main-33:\\layout\\activity_main.xml"
     },
     {
-        "merged": "com.example.laundrymanager.app-debug-3:/drawable_ic_nav_customers.xml.flat",
-        "source": "com.example.laundrymanager.app-main-5:/drawable/ic_nav_customers.xml"
+        "merged": "C:\\Users\\dtht0\\.gradle\\daemon\\9.8.2\\com.example.laundrymanager.app-debug-31:\\drawable_ic_nav_customers.xml.flat",
+        "source": "C:\\Users\\dtht0\\.gradle\\daemon\\9.8.2\\com.example.laundrymanager.app-main-33:\\drawable\\ic_nav_customers.xml"
     },
     {
-        "merged": "C:\\Users\\dtht0\\.gradle\\daemon\\9.8.2\\com.example.laundrymanager.app-debug-3:\\layout_activity_stats.xml.flat",
-        "source": "C:\\Users\\dtht0\\.gradle\\daemon\\9.8.2\\com.example.laundrymanager.app-main-5:\\layout\\activity_stats.xml"
+        "merged": "C:\\Users\\dtht0\\.gradle\\daemon\\9.8.2\\com.example.laundrymanager.app-debug-31:\\drawable_ic_phone.xml.flat",
+        "source": "C:\\Users\\dtht0\\.gradle\\daemon\\9.8.2\\com.example.laundrymanager.app-main-33:\\drawable\\ic_phone.xml"
     },
     {
-        "merged": "C:\\Users\\dtht0\\.gradle\\daemon\\9.8.2\\com.example.laundrymanager.app-debug-3:\\layout_activity_order.xml.flat",
-        "source": "C:\\Users\\dtht0\\.gradle\\daemon\\9.8.2\\com.example.laundrymanager.app-main-5:\\layout\\activity_order.xml"
+        "merged": "C:\\Users\\dtht0\\.gradle\\daemon\\9.8.2\\com.example.laundrymanager.app-debug-31:\\drawable_bg_card.xml.flat",
+        "source": "C:\\Users\\dtht0\\.gradle\\daemon\\9.8.2\\com.example.laundrymanager.app-main-33:\\drawable\\bg_card.xml"
     },
     {
-        "merged": "com.example.laundrymanager.app-debug-3:/drawable_bg_input.xml.flat",
-        "source": "com.example.laundrymanager.app-main-5:/drawable/bg_input.xml"
+        "merged": "C:\\Users\\dtht0\\.gradle\\daemon\\9.8.2\\com.example.laundrymanager.app-debug-31:\\drawable_ic_nav_profile.xml.flat",
+        "source": "C:\\Users\\dtht0\\.gradle\\daemon\\9.8.2\\com.example.laundrymanager.app-main-33:\\drawable\\ic_nav_profile.xml"
     },
     {
-        "merged": "com.example.laundrymanager.app-debug-3:/drawable_ic_logout.xml.flat",
-        "source": "com.example.laundrymanager.app-main-5:/drawable/ic_logout.xml"
+        "merged": "C:\\Users\\dtht0\\.gradle\\daemon\\9.8.2\\com.example.laundrymanager.app-debug-31:\\drawable_ic_add.xml.flat",
+        "source": "C:\\Users\\dtht0\\.gradle\\daemon\\9.8.2\\com.example.laundrymanager.app-main-33:\\drawable\\ic_add.xml"
     },
     {
-        "merged": "com.example.laundrymanager.app-debug-3:/drawable_bg_card.xml.flat",
-        "source": "com.example.laundrymanager.app-main-5:/drawable/bg_card.xml"
+        "merged": "C:\\Users\\dtht0\\.gradle\\daemon\\9.8.2\\com.example.laundrymanager.app-debug-31:\\layout_layout_bottom_taskbar.xml.flat",
+        "source": "C:\\Users\\dtht0\\.gradle\\daemon\\9.8.2\\com.example.laundrymanager.app-main-33:\\layout\\layout_bottom_taskbar.xml"
     },
     {
-        "merged": "com.example.laundrymanager.app-debug-3:/drawable_ic_nav_profile.xml.flat",
-        "source": "com.example.laundrymanager.app-main-5:/drawable/ic_nav_profile.xml"
+        "merged": "C:\\Users\\dtht0\\.gradle\\daemon\\9.8.2\\com.example.laundrymanager.app-debug-31:\\drawable_ic_delete.xml.flat",
+        "source": "C:\\Users\\dtht0\\.gradle\\daemon\\9.8.2\\com.example.laundrymanager.app-main-33:\\drawable\\ic_delete.xml"
     },
     {
-        "merged": "C:\\Users\\dtht0\\.gradle\\daemon\\9.8.2\\com.example.laundrymanager.app-debug-3:\\layout_activity_order_detail.xml.flat",
-        "source": "C:\\Users\\dtht0\\.gradle\\daemon\\9.8.2\\com.example.laundrymanager.app-main-5:\\layout\\activity_order_detail.xml"
+        "merged": "C:\\Users\\dtht0\\.gradle\\daemon\\9.8.2\\com.example.laundrymanager.app-debug-31:\\drawable_ic_schedule.xml.flat",
+        "source": "C:\\Users\\dtht0\\.gradle\\daemon\\9.8.2\\com.example.laundrymanager.app-main-33:\\drawable\\ic_schedule.xml"
     },
     {
-        "merged": "C:\\Users\\dtht0\\.gradle\\daemon\\9.8.2\\com.example.laundrymanager.app-debug-3:\\layout_activity_main.xml.flat",
-        "source": "C:\\Users\\dtht0\\.gradle\\daemon\\9.8.2\\com.example.laundrymanager.app-main-5:\\layout\\activity_main.xml"
+        "merged": "C:\\Users\\dtht0\\.gradle\\daemon\\9.8.2\\com.example.laundrymanager.app-debug-31:\\layout_item_customer.xml.flat",
+        "source": "C:\\Users\\dtht0\\.gradle\\daemon\\9.8.2\\com.example.laundrymanager.app-main-33:\\layout\\item_customer.xml"
+    },
+    {
+        "merged": "C:\\Users\\dtht0\\.gradle\\daemon\\9.8.2\\com.example.laundrymanager.app-debug-31:\\drawable_ic_nav_stats.xml.flat",
+        "source": "C:\\Users\\dtht0\\.gradle\\daemon\\9.8.2\\com.example.laundrymanager.app-main-33:\\drawable\\ic_nav_stats.xml"
+    },
+    {
+        "merged": "C:\\Users\\dtht0\\.gradle\\daemon\\9.8.2\\com.example.laundrymanager.app-debug-31:\\layout_activity_login.xml.flat",
+        "source": "C:\\Users\\dtht0\\.gradle\\daemon\\9.8.2\\com.example.laundrymanager.app-main-33:\\layout\\activity_login.xml"
+    },
+    {
+        "merged": "C:\\Users\\dtht0\\.gradle\\daemon\\9.8.2\\com.example.laundrymanager.app-debug-31:\\drawable_ic_edit.xml.flat",
+        "source": "C:\\Users\\dtht0\\.gradle\\daemon\\9.8.2\\com.example.laundrymanager.app-main-33:\\drawable\\ic_edit.xml"
+    },
+    {
+        "merged": "C:\\Users\\dtht0\\.gradle\\daemon\\9.8.2\\com.example.laundrymanager.app-debug-31:\\drawable_ic_logout.xml.flat",
+        "source": "C:\\Users\\dtht0\\.gradle\\daemon\\9.8.2\\com.example.laundrymanager.app-main-33:\\drawable\\ic_logout.xml"
+    },
+    {
+        "merged": "com.example.laundrymanager.app-debug-31:/layout_activity_profile.xml.flat",
+        "source": "com.example.laundrymanager.app-main-33:/layout/activity_profile.xml"
+    },
+    {
+        "merged": "C:\\Users\\dtht0\\.gradle\\daemon\\9.8.2\\com.example.laundrymanager.app-debug-31:\\layout_activity_order_form.xml.flat",
+        "source": "C:\\Users\\dtht0\\.gradle\\daemon\\9.8.2\\com.example.laundrymanager.app-main-33:\\layout\\activity_order_form.xml"
+    },
+    {
+        "merged": "C:\\Users\\dtht0\\.gradle\\daemon\\9.8.2\\com.example.laundrymanager.app-debug-31:\\drawable_ic_history.xml.flat",
+        "source": "C:\\Users\\dtht0\\.gradle\\daemon\\9.8.2\\com.example.laundrymanager.app-main-33:\\drawable\\ic_history.xml"
+    },
+    {
+        "merged": "C:\\Users\\dtht0\\.gradle\\daemon\\9.8.2\\com.example.laundrymanager.app-debug-31:\\layout_activity_register.xml.flat",
+        "source": "C:\\Users\\dtht0\\.gradle\\daemon\\9.8.2\\com.example.laundrymanager.app-main-33:\\layout\\activity_register.xml"
+    },
+    {
+        "merged": "C:\\Users\\dtht0\\.gradle\\daemon\\9.8.2\\com.example.laundrymanager.app-debug-31:\\layout_activity_stats.xml.flat",
+        "source": "C:\\Users\\dtht0\\.gradle\\daemon\\9.8.2\\com.example.laundrymanager.app-main-33:\\layout\\activity_stats.xml"
+    },
+    {
+        "merged": "C:\\Users\\dtht0\\.gradle\\daemon\\9.8.2\\com.example.laundrymanager.app-debug-31:\\drawable_bg_input.xml.flat",
+        "source": "C:\\Users\\dtht0\\.gradle\\daemon\\9.8.2\\com.example.laundrymanager.app-main-33:\\drawable\\bg_input.xml"
+    },
+    {
+        "merged": "C:\\Users\\dtht0\\.gradle\\daemon\\9.8.2\\com.example.laundrymanager.app-debug-31:\\drawable_ic_share.xml.flat",
+        "source": "C:\\Users\\dtht0\\.gradle\\daemon\\9.8.2\\com.example.laundrymanager.app-main-33:\\drawable\\ic_share.xml"
+    },
+    {
+        "merged": "C:\\Users\\dtht0\\.gradle\\daemon\\9.8.2\\com.example.laundrymanager.app-debug-31:\\drawable_ic_nav_orders.xml.flat",
+        "source": "C:\\Users\\dtht0\\.gradle\\daemon\\9.8.2\\com.example.laundrymanager.app-main-33:\\drawable\\ic_nav_orders.xml"
+    },
+    {
+        "merged": "C:\\Users\\dtht0\\.gradle\\daemon\\9.8.2\\com.example.laundrymanager.app-debug-31:\\drawable_bg_button_secondary.xml.flat",
+        "source": "C:\\Users\\dtht0\\.gradle\\daemon\\9.8.2\\com.example.laundrymanager.app-main-33:\\drawable\\bg_button_secondary.xml"
     }
 ]

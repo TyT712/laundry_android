@@ -10,12 +10,10 @@ import com.example.laundrymanager.util.PasswordHasher;
 
 /**
  * Quản lý schema SQLite và dữ liệu mẫu. Việc truy vấn nằm ở các lớp {@code *Repository}.
- *
- * <p>Khi nâng {@link #VERSION}, dữ liệu cũ sẽ bị xóa và tạo lại (phù hợp giai đoạn phát triển).
  */
 public final class DBHelper extends SQLiteOpenHelper {
     private static final String NAME = "laundry.db";
-    private static final int VERSION = 4;
+    private static final int VERSION = 5;
     private static final String DEFAULT_PASSWORD = "123456";
 
     private static DBHelper instance;
@@ -63,17 +61,16 @@ public final class DBHelper extends SQLiteOpenHelper {
                 + "note TEXT NOT NULL DEFAULT '', "
                 + "status TEXT NOT NULL, "
                 + "payment_status TEXT NOT NULL, "
-                + "created_at INTEGER NOT NULL)");
+                + "created_at INTEGER NOT NULL, "
+                + "due_date INTEGER NOT NULL DEFAULT 0)");
         seed(db);
     }
 
     @Override
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
-        db.execSQL("DROP TABLE IF EXISTS orders");
-        db.execSQL("DROP TABLE IF EXISTS services");
-        db.execSQL("DROP TABLE IF EXISTS customers");
-        db.execSQL("DROP TABLE IF EXISTS users");
-        onCreate(db);
+        if (oldVersion < 5) {
+            db.execSQL("ALTER TABLE orders ADD COLUMN due_date INTEGER NOT NULL DEFAULT 0");
+        }
     }
 
     private static void seed(SQLiteDatabase db) {
@@ -114,4 +111,3 @@ public final class DBHelper extends SQLiteOpenHelper {
         db.insert("customers", null, values);
     }
 }
-

@@ -1,118 +1,289 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:fillViewport="true">
+    android:background="@color/app_bg"
+    android:orientation="vertical">
 
-    <LinearLayout style="@style/Form">
+    <!-- Top App Bar -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/surface"
+        android:elevation="2dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingStart="16dp"
+        android:paddingTop="14dp"
+        android:paddingEnd="16dp"
+        android:paddingBottom="14dp">
+
+        <ImageButton
+            android:id="@+id/btnCancelOrder"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:background="?android:attr/selectableItemBackgroundBorderless"
+            android:contentDescription="@string/action_back"
+            android:rotation="180"
+            android:src="@drawable/ic_logout"
+            app:tint="@color/text_primary" />
 
         <TextView
             android:id="@+id/tvOrderTitle"
             style="@style/Title"
-            android:text="@string/order_new_title" />
-
-        <TextView
-            android:id="@+id/tvOrderInfo"
-            style="@style/Info"
-            android:textStyle="bold"
-            android:visibility="gone" />
-
-        <TextView
-            style="@style/Label"
-            android:text="@string/label_customer" />
-
-        <LinearLayout
-            android:layout_width="match_parent"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:orientation="horizontal">
-
-            <Spinner
-                android:id="@+id/spOrderCustomer"
-                style="@style/Choice"
-                android:layout_width="0dp"
-                android:layout_weight="1" />
-
-            <Button
-                android:id="@+id/btnQuickAddCustomer"
-                style="@style/Action"
-                android:layout_width="wrap_content"
-                android:text="@string/action_quick_add_customer" />
-        </LinearLayout>
-
-        <TextView
-            style="@style/Label"
-            android:text="@string/label_service" />
-
-        <Spinner
-            android:id="@+id/spOrderService"
-            style="@style/Choice" />
-
-        <TextView
-            style="@style/Label"
-            android:text="@string/label_weight" />
-
-        <EditText
-            android:id="@+id/edOrderWeight"
-            style="@style/Field"
-            android:hint="@string/hint_weight"
-            android:inputType="numberDecimal" />
-
-        <TextView
-            style="@style/Label"
-            android:text="@string/label_note" />
-
-        <EditText
-            android:id="@+id/edOrderNote"
-            style="@style/Field"
-            android:hint="@string/hint_note"
-            android:inputType="textMultiLine"
-            android:minLines="2" />
-
-        <LinearLayout
-            android:id="@+id/groupOrderStatus"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
-
-            <TextView
-                style="@style/Label"
-                android:text="@string/label_status" />
-
-            <Spinner
-                android:id="@+id/spOrderStatus"
-                style="@style/Choice" />
-        </LinearLayout>
-
-        <TextView
-            style="@style/Label"
-            android:text="@string/label_payment" />
-
-        <Spinner
-            android:id="@+id/spOrderPayment"
-            style="@style/Choice" />
-
-        <TextView
-            android:id="@+id/tvOrderTotal"
-            style="@style/Label"
-            android:layout_marginTop="16dp"
-            android:layout_marginBottom="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginBottom="0dp"
+            android:layout_weight="1"
+            android:text="@string/order_new_title"
             android:textSize="18sp" />
 
-        <Button
-            android:id="@+id/btnSaveOrder"
-            style="@style/Action"
-            android:text="@string/action_create_order" />
-
-        <Button
-            android:id="@+id/btnDeleteOrder"
-            style="@style/Action"
-            android:text="@string/action_delete_order"
-            android:visibility="gone" />
-
-        <Button
-            android:id="@+id/btnCancelOrder"
-            style="@style/Action"
-            android:text="@string/action_back" />
+        <!-- Nút Chia sẻ biên nhận (Phase 2) -->
+        <ImageButton
+            android:id="@+id/btnShareReceipt"
+            android:layout_width="38dp"
+            android:layout_height="38dp"
+            android:background="?android:attr/selectableItemBackgroundBorderless"
+            android:contentDescription="@string/action_share_receipt"
+            android:padding="8dp"
+            android:src="@drawable/ic_share"
+            android:visibility="gone"
+            app:tint="@color/primary" />
     </LinearLayout>
-</ScrollView>
 
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/tvOrderInfo"
+                style="@style/Info"
+                android:textColor="@color/primary_dark"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:visibility="gone" />
+
+            <!-- Card 1: Khách hàng & Dịch vụ -->
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                app:cardBackgroundColor="@color/surface"
+                app:cardCornerRadius="14dp"
+                app:cardElevation="1dp"
+                app:strokeColor="@color/border_color"
+                app:strokeWidth="1dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="14dp">
+
+                    <TextView
+                        style="@style/Label"
+                        android:layout_marginTop="0dp"
+                        android:text="@string/label_customer" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <Spinner
+                            android:id="@+id/spOrderCustomer"
+                            style="@style/Choice"
+                            android:layout_width="0dp"
+                            android:layout_weight="1" />
+
+                        <Button
+                            android:id="@+id/btnQuickAddCustomer"
+                            style="@style/ActionSecondary"
+                            android:layout_width="wrap_content"
+                            android:layout_height="44dp"
+                            android:layout_marginStart="8dp"
+                            android:text="@string/action_quick_add_customer"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+
+                    <TextView
+                        style="@style/Label"
+                        android:layout_marginTop="12dp"
+                        android:text="@string/label_service" />
+
+                    <Spinner
+                        android:id="@+id/spOrderService"
+                        style="@style/Choice" />
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- Card 2: Khối lượng, Ghi chú & Hẹn trả đồ -->
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                app:cardBackgroundColor="@color/surface"
+                app:cardCornerRadius="14dp"
+                app:cardElevation="1dp"
+                app:strokeColor="@color/border_color"
+                app:strokeWidth="1dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="14dp">
+
+                    <TextView
+                        style="@style/Label"
+                        android:layout_marginTop="0dp"
+                        android:text="@string/label_weight" />
+
+                    <EditText
+                        android:id="@+id/edOrderWeight"
+                        style="@style/Field"
+                        android:hint="@string/hint_weight"
+                        android:inputType="numberDecimal" />
+
+                    <!-- Chọn ngày giờ hẹn trả đồ (Phase 2) -->
+                    <TextView
+                        style="@style/Label"
+                        android:layout_marginTop="12dp"
+                        android:text="@string/label_due_date" />
+
+                    <Button
+                        android:id="@+id/btnPickDueDate"
+                        style="@style/ActionSecondary"
+                        android:layout_height="46dp"
+                        android:gravity="start|center_vertical"
+                        android:drawableStart="@drawable/ic_schedule"
+                        android:drawablePadding="10dp"
+                        android:paddingStart="14dp"
+                        android:paddingEnd="14dp"
+                        android:text="@string/hint_due_date"
+                        android:textColor="@color/text_primary"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        style="@style/Label"
+                        android:layout_marginTop="12dp"
+                        android:text="@string/label_note" />
+
+                    <EditText
+                        android:id="@+id/edOrderNote"
+                        style="@style/Field"
+                        android:hint="@string/hint_note"
+                        android:inputType="textMultiLine"
+                        android:minLines="2" />
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- Card 3: Trạng thái & Thanh toán -->
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                app:cardBackgroundColor="@color/surface"
+                app:cardCornerRadius="14dp"
+                app:cardElevation="1dp"
+                app:strokeColor="@color/border_color"
+                app:strokeWidth="1dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="14dp">
+
+                    <LinearLayout
+                        android:id="@+id/groupOrderStatus"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            style="@style/Label"
+                            android:layout_marginTop="0dp"
+                            android:text="@string/label_status" />
+
+                        <Spinner
+                            android:id="@+id/spOrderStatus"
+                            style="@style/Choice" />
+                    </LinearLayout>
+
+                    <TextView
+                        style="@style/Label"
+                        android:layout_marginTop="12dp"
+                        android:text="@string/label_payment" />
+
+                    <Spinner
+                        android:id="@+id/spOrderPayment"
+                        style="@style/Choice" />
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- Tổng tiền nổi bật -->
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                app:cardBackgroundColor="@color/primary_light"
+                app:cardCornerRadius="14dp"
+                app:cardElevation="0dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="TỔNG TIỀN DỰ KIẾN"
+                        android:textColor="@color/primary_dark"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tvOrderTotal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:textColor="@color/primary_dark"
+                        android:textSize="24sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <Button
+                android:id="@+id/btnSaveOrder"
+                style="@style/Action"
+                android:layout_height="50dp"
+                android:text="@string/action_create_order"
+                android:textSize="15sp" />
+
+            <Button
+                android:id="@+id/btnDeleteOrder"
+                style="@style/ActionSecondary"
+                android:layout_height="46dp"
+                android:layout_marginTop="10dp"
+                android:strokeColor="@color/danger"
+                android:text="@string/action_delete_order"
+                android:textColor="@color/danger"
+                android:visibility="gone" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

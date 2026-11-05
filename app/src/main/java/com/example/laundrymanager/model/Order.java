@@ -1,6 +1,5 @@
 package com.example.laundrymanager.model;
 
-/** Đơn giặt; {@code id == 0} nghĩa là đơn chưa được lưu. */
 public record Order(
         int id,
         Customer customer,
@@ -10,6 +9,11 @@ public record Order(
         String note,
         OrderStatus status,
         PaymentStatus payment,
-        long createdAt) {
+        long createdAt,
+        long dueDate
+) {
+    /** Kiểm tra xem đơn hàng đã quá hạn hẹn trả hay chưa (chỉ tính nếu chưa giao). */
+    public boolean isOverdue() {
+        return dueDate > 0 && System.currentTimeMillis() > dueDate && status != OrderStatus.DELIVERED;
+    }
 }
-

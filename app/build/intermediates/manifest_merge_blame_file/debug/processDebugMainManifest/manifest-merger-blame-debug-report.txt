@@ -11,56 +11,135 @@
 9        android:targetSdkVersion="37" />
 9-->INJECTED
 10
-11    <application
-11-->C:\Users\dtht0\OneDrive\Desktop\LaundryManagerAndroid\app\src\main\AndroidManifest.xml:3:5-23:19
-12        android:allowBackup="true"
-12-->C:\Users\dtht0\OneDrive\Desktop\LaundryManagerAndroid\app\src\main\AndroidManifest.xml:4:9-35
-13        android:debuggable="true"
-14        android:extractNativeLibs="false"
-14-->INJECTED
-15        android:label="@string/app_name"
-15-->C:\Users\dtht0\OneDrive\Desktop\LaundryManagerAndroid\app\src\main\AndroidManifest.xml:5:9-41
-16        android:testOnly="true"
-17        android:theme="@style/AppTheme" >
-17-->C:\Users\dtht0\OneDrive\Desktop\LaundryManagerAndroid\app\src\main\AndroidManifest.xml:6:9-40
-18        <activity
-18-->C:\Users\dtht0\OneDrive\Desktop\LaundryManagerAndroid\app\src\main\AndroidManifest.xml:8:9-15:20
-19            android:name="com.example.laundrymanager.ui.LoginActivity"
-19-->C:\Users\dtht0\OneDrive\Desktop\LaundryManagerAndroid\app\src\main\AndroidManifest.xml:9:13-45
-20            android:exported="true" >
-20-->C:\Users\dtht0\OneDrive\Desktop\LaundryManagerAndroid\app\src\main\AndroidManifest.xml:10:13-36
-21            <intent-filter>
-21-->C:\Users\dtht0\OneDrive\Desktop\LaundryManagerAndroid\app\src\main\AndroidManifest.xml:11:13-14:29
-22                <action android:name="android.intent.action.MAIN" />
-22-->C:\Users\dtht0\OneDrive\Desktop\LaundryManagerAndroid\app\src\main\AndroidManifest.xml:12:17-69
-22-->C:\Users\dtht0\OneDrive\Desktop\LaundryManagerAndroid\app\src\main\AndroidManifest.xml:12:25-66
-23
-24                <category android:name="android.intent.category.LAUNCHER" />
-24-->C:\Users\dtht0\OneDrive\Desktop\LaundryManagerAndroid\app\src\main\AndroidManifest.xml:13:17-77
-24-->C:\Users\dtht0\OneDrive\Desktop\LaundryManagerAndroid\app\src\main\AndroidManifest.xml:13:27-74
-25            </intent-filter>
-26        </activity>
-27        <activity android:name="com.example.laundrymanager.ui.RegisterActivity" />
-27-->C:\Users\dtht0\OneDrive\Desktop\LaundryManagerAndroid\app\src\main\AndroidManifest.xml:16:9-57
-27-->C:\Users\dtht0\OneDrive\Desktop\LaundryManagerAndroid\app\src\main\AndroidManifest.xml:16:19-54
-28        <activity android:name="com.example.laundrymanager.ui.MainActivity" />
-28-->C:\Users\dtht0\OneDrive\Desktop\LaundryManagerAndroid\app\src\main\AndroidManifest.xml:17:9-53
-28-->C:\Users\dtht0\OneDrive\Desktop\LaundryManagerAndroid\app\src\main\AndroidManifest.xml:17:19-50
-29        <activity android:name="com.example.laundrymanager.ui.ProfileActivity" />
-29-->C:\Users\dtht0\OneDrive\Desktop\LaundryManagerAndroid\app\src\main\AndroidManifest.xml:18:9-56
-29-->C:\Users\dtht0\OneDrive\Desktop\LaundryManagerAndroid\app\src\main\AndroidManifest.xml:18:19-53
-30        <activity android:name="com.example.laundrymanager.ui.CustomerActivity" />
-30-->C:\Users\dtht0\OneDrive\Desktop\LaundryManagerAndroid\app\src\main\AndroidManifest.xml:19:9-57
-30-->C:\Users\dtht0\OneDrive\Desktop\LaundryManagerAndroid\app\src\main\AndroidManifest.xml:19:19-54
-31        <activity android:name="com.example.laundrymanager.ui.ServiceActivity" />
-31-->C:\Users\dtht0\OneDrive\Desktop\LaundryManagerAndroid\app\src\main\AndroidManifest.xml:20:9-56
-31-->C:\Users\dtht0\OneDrive\Desktop\LaundryManagerAndroid\app\src\main\AndroidManifest.xml:20:19-53
-32        <activity android:name="com.example.laundrymanager.ui.OrderFormActivity" />
-32-->C:\Users\dtht0\OneDrive\Desktop\LaundryManagerAndroid\app\src\main\AndroidManifest.xml:21:9-58
-32-->C:\Users\dtht0\OneDrive\Desktop\LaundryManagerAndroid\app\src\main\AndroidManifest.xml:21:19-55
-33        <activity android:name="com.example.laundrymanager.ui.StatsActivity" />
-33-->C:\Users\dtht0\OneDrive\Desktop\LaundryManagerAndroid\app\src\main\AndroidManifest.xml:22:9-54
-33-->C:\Users\dtht0\OneDrive\Desktop\LaundryManagerAndroid\app\src\main\AndroidManifest.xml:22:19-51
-34    </application>
-35
-36</manifest>
+11    <permission
+11-->[androidx.core:core:1.13.0] C:\Users\dtht0\.gradle\caches\9.8.2\transforms\24701b97b6a17ccb88cf0aea8fa05a6f\transformed\core-1.13.0\AndroidManifest.xml:22:5-24:47
+12        android:name="com.example.laundrymanager.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+12-->[androidx.core:core:1.13.0] C:\Users\dtht0\.gradle\caches\9.8.2\transforms\24701b97b6a17ccb88cf0aea8fa05a6f\transformed\core-1.13.0\AndroidManifest.xml:23:9-81
+13        android:protectionLevel="signature" />
+13-->[androidx.core:core:1.13.0] C:\Users\dtht0\.gradle\caches\9.8.2\transforms\24701b97b6a17ccb88cf0aea8fa05a6f\transformed\core-1.13.0\AndroidManifest.xml:24:9-44
+14
+15    <uses-permission android:name="com.example.laundrymanager.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+15-->[androidx.core:core:1.13.0] C:\Users\dtht0\.gradle\caches\9.8.2\transforms\24701b97b6a17ccb88cf0aea8fa05a6f\transformed\core-1.13.0\AndroidManifest.xml:26:5-97
+15-->[androidx.core:core:1.13.0] C:\Users\dtht0\.gradle\caches\9.8.2\transforms\24701b97b6a17ccb88cf0aea8fa05a6f\transformed\core-1.13.0\AndroidManifest.xml:26:22-94
+16
+17    <application
+17-->C:\Users\dtht0\OneDrive\Desktop\LaundryManagerAndroid\app\src\main\AndroidManifest.xml:3:5-23:19
+18        android:allowBackup="true"
+18-->C:\Users\dtht0\OneDrive\Desktop\LaundryManagerAndroid\app\src\main\AndroidManifest.xml:4:9-35
+19        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+19-->[androidx.core:core:1.13.0] C:\Users\dtht0\.gradle\caches\9.8.2\transforms\24701b97b6a17ccb88cf0aea8fa05a6f\transformed\core-1.13.0\AndroidManifest.xml:28:18-86
+20        android:debuggable="true"
+21        android:extractNativeLibs="false"
+21-->INJECTED
+22        android:label="@string/app_name"
+22-->C:\Users\dtht0\OneDrive\Desktop\LaundryManagerAndroid\app\src\main\AndroidManifest.xml:5:9-41
+23        android:testOnly="true"
+24        android:theme="@style/AppTheme" >
+24-->C:\Users\dtht0\OneDrive\Desktop\LaundryManagerAndroid\app\src\main\AndroidManifest.xml:6:9-40
+25        <activity
+25-->C:\Users\dtht0\OneDrive\Desktop\LaundryManagerAndroid\app\src\main\AndroidManifest.xml:8:9-15:20
+26            android:name="com.example.laundrymanager.ui.LoginActivity"
+26-->C:\Users\dtht0\OneDrive\Desktop\LaundryManagerAndroid\app\src\main\AndroidManifest.xml:9:13-45
+27            android:exported="true" >
+27-->C:\Users\dtht0\OneDrive\Desktop\LaundryManagerAndroid\app\src\main\AndroidManifest.xml:10:13-36
+28            <intent-filter>
+28-->C:\Users\dtht0\OneDrive\Desktop\LaundryManagerAndroid\app\src\main\AndroidManifest.xml:11:13-14:29
+29                <action android:name="android.intent.action.MAIN" />
+29-->C:\Users\dtht0\OneDrive\Desktop\LaundryManagerAndroid\app\src\main\AndroidManifest.xml:12:17-69
+29-->C:\Users\dtht0\OneDrive\Desktop\LaundryManagerAndroid\app\src\main\AndroidManifest.xml:12:25-66
+30
+31                <category android:name="android.intent.category.LAUNCHER" />
+31-->C:\Users\dtht0\OneDrive\Desktop\LaundryManagerAndroid\app\src\main\AndroidManifest.xml:13:17-77
+31-->C:\Users\dtht0\OneDrive\Desktop\LaundryManagerAndroid\app\src\main\AndroidManifest.xml:13:27-74
+32            </intent-filter>
+33        </activity>
+34        <activity android:name="com.example.laundrymanager.ui.RegisterActivity" />
+34-->C:\Users\dtht0\OneDrive\Desktop\LaundryManagerAndroid\app\src\main\AndroidManifest.xml:16:9-57
+34-->C:\Users\dtht0\OneDrive\Desktop\LaundryManagerAndroid\app\src\main\AndroidManifest.xml:16:19-54
+35        <activity android:name="com.example.laundrymanager.ui.MainActivity" />
+35-->C:\Users\dtht0\OneDrive\Desktop\LaundryManagerAndroid\app\src\main\AndroidManifest.xml:17:9-53
+35-->C:\Users\dtht0\OneDrive\Desktop\LaundryManagerAndroid\app\src\main\AndroidManifest.xml:17:19-50
+36        <activity android:name="com.example.laundrymanager.ui.ProfileActivity" />
+36-->C:\Users\dtht0\OneDrive\Desktop\LaundryManagerAndroid\app\src\main\AndroidManifest.xml:18:9-56
+36-->C:\Users\dtht0\OneDrive\Desktop\LaundryManagerAndroid\app\src\main\AndroidManifest.xml:18:19-53
+37        <activity android:name="com.example.laundrymanager.ui.CustomerActivity" />
+37-->C:\Users\dtht0\OneDrive\Desktop\LaundryManagerAndroid\app\src\main\AndroidManifest.xml:19:9-57
+37-->C:\Users\dtht0\OneDrive\Desktop\LaundryManagerAndroid\app\src\main\AndroidManifest.xml:19:19-54
+38        <activity android:name="com.example.laundrymanager.ui.ServiceActivity" />
+38-->C:\Users\dtht0\OneDrive\Desktop\LaundryManagerAndroid\app\src\main\AndroidManifest.xml:20:9-56
+38-->C:\Users\dtht0\OneDrive\Desktop\LaundryManagerAndroid\app\src\main\AndroidManifest.xml:20:19-53
+39        <activity android:name="com.example.laundrymanager.ui.OrderFormActivity" />
+39-->C:\Users\dtht0\OneDrive\Desktop\LaundryManagerAndroid\app\src\main\AndroidManifest.xml:21:9-58
+39-->C:\Users\dtht0\OneDrive\Desktop\LaundryManagerAndroid\app\src\main\AndroidManifest.xml:21:19-55
+40        <activity android:name="com.example.laundrymanager.ui.StatsActivity" />
+40-->C:\Users\dtht0\OneDrive\Desktop\LaundryManagerAndroid\app\src\main\AndroidManifest.xml:22:9-54
+40-->C:\Users\dtht0\OneDrive\Desktop\LaundryManagerAndroid\app\src\main\AndroidManifest.xml:22:19-51
+41
+42        <provider
+42-->[androidx.emoji2:emoji2:1.3.0] C:\Users\dtht0\.gradle\caches\9.8.2\transforms\ebddd4b7d235b67c3173bb4cdf75a422\transformed\emoji2-1.3.0\AndroidManifest.xml:24:9-32:20
+43            android:name="androidx.startup.InitializationProvider"
+43-->[androidx.emoji2:emoji2:1.3.0] C:\Users\dtht0\.gradle\caches\9.8.2\transforms\ebddd4b7d235b67c3173bb4cdf75a422\transformed\emoji2-1.3.0\AndroidManifest.xml:25:13-67
+44            android:authorities="com.example.laundrymanager.androidx-startup"
+44-->[androidx.emoji2:emoji2:1.3.0] C:\Users\dtht0\.gradle\caches\9.8.2\transforms\ebddd4b7d235b67c3173bb4cdf75a422\transformed\emoji2-1.3.0\AndroidManifest.xml:26:13-68
+45            android:exported="false" >
+45-->[androidx.emoji2:emoji2:1.3.0] C:\Users\dtht0\.gradle\caches\9.8.2\transforms\ebddd4b7d235b67c3173bb4cdf75a422\transformed\emoji2-1.3.0\AndroidManifest.xml:27:13-37
+46            <meta-data
+46-->[androidx.emoji2:emoji2:1.3.0] C:\Users\dtht0\.gradle\caches\9.8.2\transforms\ebddd4b7d235b67c3173bb4cdf75a422\transformed\emoji2-1.3.0\AndroidManifest.xml:29:13-31:52
+47                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+47-->[androidx.emoji2:emoji2:1.3.0] C:\Users\dtht0\.gradle\caches\9.8.2\transforms\ebddd4b7d235b67c3173bb4cdf75a422\transformed\emoji2-1.3.0\AndroidManifest.xml:30:17-75
+48                android:value="androidx.startup" />
+48-->[androidx.emoji2:emoji2:1.3.0] C:\Users\dtht0\.gradle\caches\9.8.2\transforms\ebddd4b7d235b67c3173bb4cdf75a422\transformed\emoji2-1.3.0\AndroidManifest.xml:31:17-49
+49            <meta-data
+49-->[androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\dtht0\.gradle\caches\9.8.2\transforms\bcf96f80b47e930ee301d272eba0e1ea\transformed\lifecycle-process-2.6.2\AndroidManifest.xml:29:13-31:52
+50                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+50-->[androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\dtht0\.gradle\caches\9.8.2\transforms\bcf96f80b47e930ee301d272eba0e1ea\transformed\lifecycle-process-2.6.2\AndroidManifest.xml:30:17-78
+51                android:value="androidx.startup" />
+51-->[androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\dtht0\.gradle\caches\9.8.2\transforms\bcf96f80b47e930ee301d272eba0e1ea\transformed\lifecycle-process-2.6.2\AndroidManifest.xml:31:17-49
+52            <meta-data
+52-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\dtht0\.gradle\caches\9.8.2\transforms\efa73f4540fa89c1d33d8741163cdde3\transformed\profileinstaller-1.3.1\AndroidManifest.xml:29:13-31:52
+53                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+53-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\dtht0\.gradle\caches\9.8.2\transforms\efa73f4540fa89c1d33d8741163cdde3\transformed\profileinstaller-1.3.1\AndroidManifest.xml:30:17-85
+54                android:value="androidx.startup" />
+54-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\dtht0\.gradle\caches\9.8.2\transforms\efa73f4540fa89c1d33d8741163cdde3\transformed\profileinstaller-1.3.1\AndroidManifest.xml:31:17-49
+55        </provider>
+56
+57        <receiver
+57-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\dtht0\.gradle\caches\9.8.2\transforms\efa73f4540fa89c1d33d8741163cdde3\transformed\profileinstaller-1.3.1\AndroidManifest.xml:34:9-52:20
+58            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+58-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\dtht0\.gradle\caches\9.8.2\transforms\efa73f4540fa89c1d33d8741163cdde3\transformed\profileinstaller-1.3.1\AndroidManifest.xml:35:13-76
+59            android:directBootAware="false"
+59-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\dtht0\.gradle\caches\9.8.2\transforms\efa73f4540fa89c1d33d8741163cdde3\transformed\profileinstaller-1.3.1\AndroidManifest.xml:36:13-44
+60            android:enabled="true"
+60-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\dtht0\.gradle\caches\9.8.2\transforms\efa73f4540fa89c1d33d8741163cdde3\transformed\profileinstaller-1.3.1\AndroidManifest.xml:37:13-35
+61            android:exported="true"
+61-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\dtht0\.gradle\caches\9.8.2\transforms\efa73f4540fa89c1d33d8741163cdde3\transformed\profileinstaller-1.3.1\AndroidManifest.xml:38:13-36
+62            android:permission="android.permission.DUMP" >
+62-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\dtht0\.gradle\caches\9.8.2\transforms\efa73f4540fa89c1d33d8741163cdde3\transformed\profileinstaller-1.3.1\AndroidManifest.xml:39:13-57
+63            <intent-filter>
+63-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\dtht0\.gradle\caches\9.8.2\transforms\efa73f4540fa89c1d33d8741163cdde3\transformed\profileinstaller-1.3.1\AndroidManifest.xml:40:13-42:29
+64                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+64-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\dtht0\.gradle\caches\9.8.2\transforms\efa73f4540fa89c1d33d8741163cdde3\transformed\profileinstaller-1.3.1\AndroidManifest.xml:41:17-91
+64-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\dtht0\.gradle\caches\9.8.2\transforms\efa73f4540fa89c1d33d8741163cdde3\transformed\profileinstaller-1.3.1\AndroidManifest.xml:41:25-88
+65            </intent-filter>
+66            <intent-filter>
+66-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\dtht0\.gradle\caches\9.8.2\transforms\efa73f4540fa89c1d33d8741163cdde3\transformed\profileinstaller-1.3.1\AndroidManifest.xml:43:13-45:29
+67                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+67-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\dtht0\.gradle\caches\9.8.2\transforms\efa73f4540fa89c1d33d8741163cdde3\transformed\profileinstaller-1.3.1\AndroidManifest.xml:44:17-85
+67-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\dtht0\.gradle\caches\9.8.2\transforms\efa73f4540fa89c1d33d8741163cdde3\transformed\profileinstaller-1.3.1\AndroidManifest.xml:44:25-82
+68            </intent-filter>
+69            <intent-filter>
+69-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\dtht0\.gradle\caches\9.8.2\transforms\efa73f4540fa89c1d33d8741163cdde3\transformed\profileinstaller-1.3.1\AndroidManifest.xml:46:13-48:29
+70                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+70-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\dtht0\.gradle\caches\9.8.2\transforms\efa73f4540fa89c1d33d8741163cdde3\transformed\profileinstaller-1.3.1\AndroidManifest.xml:47:17-88
+70-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\dtht0\.gradle\caches\9.8.2\transforms\efa73f4540fa89c1d33d8741163cdde3\transformed\profileinstaller-1.3.1\AndroidManifest.xml:47:25-85
+71            </intent-filter>
+72            <intent-filter>
+72-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\dtht0\.gradle\caches\9.8.2\transforms\efa73f4540fa89c1d33d8741163cdde3\transformed\profileinstaller-1.3.1\AndroidManifest.xml:49:13-51:29
+73                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+73-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\dtht0\.gradle\caches\9.8.2\transforms\efa73f4540fa89c1d33d8741163cdde3\transformed\profileinstaller-1.3.1\AndroidManifest.xml:50:17-95
+73-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\dtht0\.gradle\caches\9.8.2\transforms\efa73f4540fa89c1d33d8741163cdde3\transformed\profileinstaller-1.3.1\AndroidManifest.xml:50:25-92
+74            </intent-filter>
+75        </receiver>
+76    </application>
+77
+78</manifest>

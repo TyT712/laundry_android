@@ -1,12 +1,45 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="app_bg">#F4F6F9</color>
-    <color name="primary">#0066CC</color>
-    <color name="primary_dark">#004C99</color>
-    <color name="primary_light">#E7F1FF</color>
+    <!-- Brand / Primary Palette -->
+    <color name="primary">#0284C7</color>
+    <color name="primary_dark">#0369A1</color>
+    <color name="primary_light">#E0F2FE</color>
+    <color name="primary_variant">#0EA5E9</color>
+    <color name="secondary">#0D9488</color>
+    <color name="secondary_dark">#0F766E</color>
+    <color name="secondary_light">#CCFBF1</color>
+
+    <!-- Surfaces & Backgrounds -->
+    <color name="app_bg">#F8FAFC</color>
     <color name="surface">#FFFFFF</color>
     <color name="surface_variant">#F1F5F9</color>
+    <color name="border_color">#E2E8F0</color>
+
+    <!-- Typography -->
     <color name="text_primary">#0F172A</color>
     <color name="text_secondary">#64748B</color>
-    <color name="border_color">#E2E8F0</color>
+    <color name="text_muted">#94A3B8</color>
+
+    <!-- Order Status Colors -->
+    <color name="status_received_bg">#E0F2FE</color>
+    <color name="status_received_text">#0284C7</color>
+    <color name="status_washing_bg">#EDE9FE</color>
+    <color name="status_washing_text">#6D28D9</color>
+    <color name="status_drying_bg">#FEF3C7</color>
+    <color name="status_drying_text">#D97706</color>
+    <color name="status_done_bg">#DCFCE7</color>
+    <color name="status_done_text">#15803D</color>
+    <color name="status_delivered_bg">#F1F5F9</color>
+    <color name="status_delivered_text">#475569</color>
+
+    <!-- Payment Status Colors -->
+    <color name="payment_paid_bg">#DCFCE7</color>
+    <color name="payment_paid_text">#166534</color>
+    <color name="payment_unpaid_bg">#FEE2E2</color>
+    <color name="payment_unpaid_text">#DC2626</color>
+
+    <!-- Actions / Utilities -->
+    <color name="danger">#EF4444</color>
+    <color name="danger_light">#FEE2E2</color>
+    <color name="success">#22C55E</color>
 </resources>

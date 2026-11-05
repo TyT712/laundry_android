@@ -1,11 +1,14 @@
 package com.example.laundrymanager.ui;
 
+import android.app.DatePickerDialog;
+import android.app.TimePickerDialog;
 import android.content.Context;
 import android.content.Intent;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.Spinner;
 import android.widget.TextView;
 
@@ -22,11 +25,12 @@ import com.example.laundrymanager.util.Formats;
 import com.example.laundrymanager.util.Ui;
 
 import java.util.ArrayList;
+import java.util.Calendar;
 import java.util.List;
 
 /**
  * Form đơn giặt dùng chung cho hai chế độ: tạo đơn mới (không có extra) và
- * xem chi tiết / sửa / xóa đơn (có {@link #EXTRA_ORDER_ID}).
+ * xem chi tiết / sửa / xóa / chia sẻ biên nhận đơn (có {@link #EXTRA_ORDER_ID}).
  */
 public class OrderFormActivity extends BaseActivity {
     private static final String EXTRA_ORDER_ID = "order_id";
@@ -49,6 +53,10 @@ public class OrderFormActivity extends BaseActivity {
     private EditText edWeight;
     private EditText edNote;
     private TextView tvTotal;
+    private Button btnPickDueDate;
+    private ImageButton btnShareReceipt;
+
+    private long selectedDueDate;
 
     @Override
     protected int layoutRes() {
@@ -66,6 +74,8 @@ public class OrderFormActivity extends BaseActivity {
         edWeight = findViewById(R.id.edOrderWeight);
         edNote = findViewById(R.id.edOrderNote);
         tvTotal = findViewById(R.id.tvOrderTotal);
+        btnPickDueDate = findViewById(R.id.btnPickDueDate);
+        btnShareReceipt = findViewById(R.id.btnShareReceipt);
 
         spStatus.setAdapter(Ui.enumAdapter(this, OrderStatus.values()));
         spPayment.setAdapter(Ui.enumAdapter(this, PaymentStatus.values()));
@@ -77,6 +87,14 @@ public class OrderFormActivity extends BaseActivity {
 
         Ui.onItemSelected(spService, this::updateTotal);
         Ui.onTextChanged(edWeight, this::updateTotal);
+
+        // Mặc định hẹn trả sau 24 giờ
+        selectedDueDate = System.currentTimeMillis() + 24 * 3600 * 1000L;
+        updateDueDateDisplay();
+
+        btnPickDueDate.setOnClickListener(v -> showDateTimePicker());
+        btnShareReceipt.setOnClickListener(v -> shareReceipt());
+
         findViewById(R.id.btnQuickAddCustomer)
                 .setOnClickListener(v -> startActivityForResult(CustomerActivity.quickAddIntent(this), REQUEST_QUICK_ADD_CUSTOMER));
         findViewById(R.id.btnSaveOrder).setOnClickListener(v -> save());
@@ -95,6 +113,78 @@ public class OrderFormActivity extends BaseActivity {
         updateTotal();
     }
 
+    private void updateDueDateDisplay() {
+        btnPickDueDate.setText(Formats.dateTime(selectedDueDate));
+    }
+
+    private void showDateTimePicker() {
+        Calendar calendar = Calendar.getInstance();
+        calendar.setTimeInMillis(selectedDueDate > 0 ? selectedDueDate : System.currentTimeMillis());
+
+        int year = calendar.get(Calendar.YEAR);
+        int month = calendar.get(Calendar.MONTH);
+        int day = calendar.get(Calendar.DAY_OF_MONTH);
+
+        new DatePickerDialog(this, (view, y, m, d) -> {
+            calendar.set(Calendar.YEAR, y);
+            calendar.set(Calendar.MONTH, m);
+            calendar.set(Calendar.DAY_OF_MONTH, d);
+
+            int hour = calendar.get(Calendar.HOUR_OF_DAY);
+            int minute = calendar.get(Calendar.MINUTE);
+
+            new TimePickerDialog(this, (timeView, h, min) -> {
+                calendar.set(Calendar.HOUR_OF_DAY, h);
+                calendar.set(Calendar.MINUTE, min);
+                calendar.set(Calendar.SECOND, 0);
+                selectedDueDate = calendar.getTimeInMillis();
+                updateDueDateDisplay();
+            }, hour, minute, true).show();
+        }, year, month, day).show();
+    }
+
+    private void shareReceipt() {
+        if (editing == null) {
+            return;
+        }
+
+        Customer c = editing.customer();
+        Service s = editing.service();
+        String storeName = getString(R.string.app_name);
+
+        StringBuilder sb = new StringBuilder();
+        sb.append("=================================\n");
+        sb.append("   TIỆM GIẶT LÀ - ").append(storeName.toUpperCase()).append("\n");
+        sb.append("      BIÊN NHẬN GIẶT LÀ\n");
+        sb.append("=================================\n");
+        sb.append("Mã đơn: #").append(editing.id()).append("\n");
+        sb.append("Ngày nhận: ").append(Formats.dateTime(editing.createdAt())).append("\n");
+        sb.append("Hẹn trả đồ: ").append(Formats.dateTime(editing.dueDate())).append("\n\n");
+        sb.append("Khách hàng: ").append(c.name()).append("\n");
+        sb.append("Số điện thoại: ").append(c.phone()).append("\n");
+        if (c.address() != null && !c.address().isEmpty()) {
+            sb.append("Địa chỉ: ").append(c.address()).append("\n");
+        }
+        sb.append("\n");
+        sb.append("Dịch vụ: ").append(s.name()).append("\n");
+        sb.append("Khối lượng: ").append(Formats.weight(editing.weight())).append(" kg\n");
+        sb.append("Đơn giá: ").append(Formats.amount(s.price())).append(" đ/kg\n");
+        sb.append("---------------------------------\n");
+        sb.append("TỔNG TIỀN: ").append(Formats.money(this, editing.total())).append("\n");
+        sb.append("Trạng thái: ").append(getString(editing.status().label())).append("\n");
+        sb.append("Thanh toán: ").append(getString(editing.payment().label())).append("\n");
+        if (editing.note() != null && !editing.note().trim().isEmpty()) {
+            sb.append("Ghi chú: ").append(editing.note().trim()).append("\n");
+        }
+        sb.append("=================================\n");
+        sb.append("Cảm ơn quý khách đã tin tưởng dịch vụ!");
+
+        Intent sendIntent = new Intent(Intent.ACTION_SEND);
+        sendIntent.putExtra(Intent.EXTRA_TEXT, sb.toString());
+        sendIntent.setType("text/plain");
+        startActivity(Intent.createChooser(sendIntent, getString(R.string.share_receipt_title)));
+    }
+
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
@@ -106,7 +196,6 @@ public class OrderFormActivity extends BaseActivity {
         }
     }
 
-    /** Nạp lại danh sách khách hàng (giữ nguyên lựa chọn hiện tại nếu có). */
     @Override
     protected void onShow() {
         Customer selected = getSelectedCustomer();
@@ -144,6 +233,7 @@ public class OrderFormActivity extends BaseActivity {
         info.setVisibility(View.VISIBLE);
         findViewById(R.id.groupOrderStatus).setVisibility(View.VISIBLE);
         findViewById(R.id.btnDeleteOrder).setVisibility(View.VISIBLE);
+        btnShareReceipt.setVisibility(View.VISIBLE);
         ((Button) findViewById(R.id.btnSaveOrder)).setText(R.string.action_save_order);
 
         showCustomers(order.customer().id());
@@ -157,13 +247,16 @@ public class OrderFormActivity extends BaseActivity {
         spPayment.setSelection(order.payment().ordinal());
         edWeight.setText(Ui.plainNumber(order.weight()));
         edNote.setText(order.note());
+
+        selectedDueDate = order.dueDate();
+        updateDueDateDisplay();
     }
 
     private void updateTotal() {
         Service service = Ui.selected(spService, services);
         Double weight = Ui.positiveNumber(Ui.text(edWeight));
         double total = service == null || weight == null ? 0 : service.priceFor(weight);
-        tvTotal.setText(getString(R.string.order_total, Formats.money(this, total)));
+        tvTotal.setText(Formats.money(this, total));
     }
 
     private void save() {
@@ -199,7 +292,9 @@ public class OrderFormActivity extends BaseActivity {
                 Ui.text(edNote),
                 Ui.selected(spStatus, OrderStatus.values()),
                 Ui.selected(spPayment, PaymentStatus.values()),
-                editing == null ? System.currentTimeMillis() : editing.createdAt());
+                editing == null ? System.currentTimeMillis() : editing.createdAt(),
+                selectedDueDate);
+
         if (!orders.save(order)) {
             toast(R.string.save_failed);
             return;

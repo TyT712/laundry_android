@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.example.laundrymanager.FormatsTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2026-11-05T04:02:42.119Z" hostname="DESKTOP-DTAGME2" time="0.056">
+  <properties/>
+  <testcase name="testAmountFormatting" classname="com.example.laundrymanager.FormatsTest" time="0.017"/>
+  <testcase name="testWeightFormatting" classname="com.example.laundrymanager.FormatsTest" time="0.001"/>
+  <testcase name="testDateTimeFormatting" classname="com.example.laundrymanager.FormatsTest" time="0.021"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

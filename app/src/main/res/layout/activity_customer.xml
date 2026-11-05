@@ -1,93 +1,217 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/app_bg"
     android:orientation="vertical">
 
+    <!-- Top App Bar -->
     <LinearLayout
-        style="@style/Form"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/surface"
+        android:elevation="2dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingStart="16dp"
+        android:paddingTop="14dp"
+        android:paddingEnd="16dp"
+        android:paddingBottom="14dp">
+
+        <TextView
+            style="@style/Title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="0dp"
+            android:layout_weight="1"
+            android:text="@string/customers_title"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tvCustomerCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_badge_rounded"
+            android:backgroundTint="@color/primary_light"
+            android:paddingStart="10dp"
+            android:paddingTop="4dp"
+            android:paddingEnd="10dp"
+            android:paddingBottom="4dp"
+            android:textColor="@color/primary"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <!-- Search Bar -->
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="6dp"
+        app:cardBackgroundColor="@color/surface"
+        app:cardCornerRadius="12dp"
+        app:cardElevation="1dp"
+        app:strokeColor="@color/border_color"
+        app:strokeWidth="1dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:contentDescription="@null"
+                android:src="@drawable/ic_search"
+                app:tint="@color/text_muted" />
+
+            <EditText
+                android:id="@+id/edSearchCustomer"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="8dp"
+                android:layout_weight="1"
+                android:background="@null"
+                android:hint="@string/hint_search_customers"
+                android:imeOptions="actionSearch"
+                android:inputType="text"
+                android:maxLines="1"
+                android:textColor="@color/text_primary"
+                android:textColorHint="@color/text_muted"
+                android:textSize="14sp" />
+
+            <ImageButton
+                android:id="@+id/btnClearCustomerSearch"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:background="?android:attr/selectableItemBackgroundBorderless"
+                android:contentDescription="@string/action_refresh"
+                android:padding="6dp"
+                android:src="@drawable/ic_refresh"
+                android:visibility="gone"
+                app:tint="@color/text_secondary" />
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <!-- Card Form Thêm / Cập nhật khách hàng -->
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cardCustomerForm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="6dp"
+        app:cardBackgroundColor="@color/surface"
+        app:cardCornerRadius="14dp"
+        app:cardElevation="1dp"
+        app:strokeColor="@color/border_color"
+        app:strokeWidth="1dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="12dp">
+
+            <TextView
+                android:id="@+id/tvFormHeader"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="Thêm khách hàng mới"
+                android:textColor="@color/primary"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/edCustomerName"
+                    style="@style/Field"
+                    android:layout_width="0dp"
+                    android:layout_height="44dp"
+                    android:layout_marginEnd="6dp"
+                    android:layout_weight="1"
+                    android:hint="@string/hint_customer_name"
+                    android:inputType="textPersonName"
+                    android:textSize="13sp" />
+
+                <EditText
+                    android:id="@+id/edCustomerPhone"
+                    style="@style/Field"
+                    android:layout_width="0dp"
+                    android:layout_height="44dp"
+                    android:layout_weight="1"
+                    android:hint="@string/hint_customer_phone"
+                    android:inputType="phone"
+                    android:textSize="13sp" />
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/edCustomerAddress"
+                style="@style/Field"
+                android:layout_height="44dp"
+                android:layout_marginTop="6dp"
+                android:hint="@string/hint_customer_address"
+                android:inputType="textPostalAddress"
+                android:textSize="13sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btnSaveCustomer"
+                    style="@style/Action"
+                    android:layout_width="0dp"
+                    android:layout_height="42dp"
+                    android:layout_weight="1"
+                    android:text="@string/action_save_customer" />
+
+                <Button
+                    android:id="@+id/btnClearCustomer"
+                    style="@style/ActionSecondary"
+                    android:layout_width="wrap_content"
+                    android:layout_height="42dp"
+                    android:layout_marginStart="8dp"
+                    android:text="@string/action_cancel_edit"
+                    android:visibility="gone" />
+            </LinearLayout>
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <!-- Danh sách khách hàng + Empty State -->
+    <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1">
 
-        <TextView
-            style="@style/Title"
-            android:text="@string/customers_title" />
-
-        <EditText
-            android:id="@+id/edCustomerName"
-            style="@style/Field"
-            android:hint="@string/hint_customer_name"
-            android:inputType="textPersonName" />
-
-        <EditText
-            android:id="@+id/edCustomerPhone"
-            style="@style/Field"
-            android:hint="@string/hint_customer_phone"
-            android:inputType="phone" />
-
-        <EditText
-            android:id="@+id/edCustomerAddress"
-            style="@style/Field"
-            android:hint="@string/hint_customer_address"
-            android:inputType="textPostalAddress" />
-
-        <LinearLayout
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvCustomers"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
+            android:layout_height="match_parent"
+            android:clipToPadding="false"
+            android:paddingTop="4dp"
+            android:paddingBottom="12dp" />
 
-            <Button
-                android:id="@+id/btnSaveCustomer"
-                style="@style/Action"
-                android:layout_width="0dp"
-                android:layout_weight="1"
-                android:text="@string/action_save_customer" />
+        <include
+            android:id="@+id/emptyStateCustomers"
+            layout="@layout/layout_empty_state" />
+    </FrameLayout>
 
-            <Button
-                android:id="@+id/btnClearCustomer"
-                style="@style/Action"
-                android:layout_width="wrap_content"
-                android:text="@string/action_cancel_edit" />
-        </LinearLayout>
-
-        <TextView
-            style="@style/Label"
-            android:layout_marginTop="12dp"
-            android:text="@string/customers_list_header" />
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-
-            <EditText
-                android:id="@+id/edSearchCustomer"
-                style="@style/Field"
-                android:layout_width="0dp"
-                android:layout_weight="1"
-                android:hint="@string/hint_search_customers"
-                android:inputType="text" />
-
-            <Button
-                android:id="@+id/btnSearchCustomer"
-                style="@style/Action"
-                android:layout_width="wrap_content"
-                android:text="@string/action_find" />
-
-            <Button
-                android:id="@+id/btnResetCustomerSearch"
-                style="@style/Action"
-                android:layout_width="wrap_content"
-                android:text="@string/action_all" />
-        </LinearLayout>
-
-        <ListView
-            android:id="@+id/listCustomers"
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1" />
-    </LinearLayout>
-
+    <!-- Bottom Navigation Taskbar -->
     <include layout="@layout/layout_bottom_taskbar" />
 </LinearLayout>
